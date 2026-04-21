@@ -12,3 +12,10 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+
+h2 {
+    font-family: 'Arima';
+    font-weight: 700;
+    font-size: 52px;
+    color: var(--primary-green-color);
+}
