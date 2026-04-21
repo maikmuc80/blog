@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
 
 <head>
@@ -33,15 +33,39 @@
 
 
     <main>
-        <section>
+      <section></section>
+      <section></section>
+      <section class="contact_form">
+        <div>
+          <div class="heading_contact">
+            <img src="./assets/icon/person_pin.svg" alt="contact pin" />
+            <p>Contact Form</p>
+          </div>
+          <p>
+            Have a question or an idea to collaborate? Get in touch—I’d love to
+            hear from you and explore how we can work together.
+          </p>
+        </div>
+        <form action="">
+          <label for="name">What's your name?</label>
+          <input type="text" />
 
-        </section>
-        <section>
+          <label for="mail">What's your e-mail?</label>
+          <input type="text" />
 
-        </section>
-        <section>
+          <label for="subject">How can I help?</label>
+          <input type="text" />
 
-        </section>
+          <label class="container">
+            I've read the privacy policy and agree to the processing of my data
+            as outlined.
+            <input type="checkbox" unchecked />
+            <span class="checkmark"></span>
+          </label>
+
+          <input type="submit" value="Submit" />
+        </form>
+      </section>
     </main>
 </body>
 
