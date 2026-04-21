@@ -5,6 +5,8 @@ main {
 }
 
 .contact_form {
+
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -45,7 +47,17 @@ main {
 }
 
 .info {
-line-height: 150%;
-padding: 16px 0 56px 0;
-  
+  line-height: 150%;
+  padding: 16px 0 56px 0;
+}
+
+@media screen and (min-width: 1440px) {
+  .header_content {
+    padding: 32px max(120px, calc(50% - 720px));
+  }
+
+
+  .footer_content {
+    padding: 60px max(120px, calc(50% - 720px));
+  }
 }
