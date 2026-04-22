@@ -75,6 +75,14 @@ footer {
     font-size: 1rem;
 }
 
+.footer_imprint_text>a{
+    font-family: 'Palanquin';
+    color: rgba(248, 245, 235, 1);
+    white-space: nowrap;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
 .footer_socialmedia {
     display: flex;
     gap: 16px;
