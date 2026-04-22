@@ -4,27 +4,43 @@ main {
   padding: 120px;
 }
 
-.landing_page{
+.landing_page {
   height: 500px;
   display: flex;
+  width: 100%;
+  position: relative;
+  background-image: url(/assets/img/header\ photo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-h3{
-  font-family: 'Arima';
+.landing_page_text {
+  position: absolute;
+  z-index: 3;
+}
+
+.index {
+  position: absolute;
+  z-index: 2;
+}
+
+/* .index2 {
+  position: relative;
+  z-index: 1;
+} */
+
+h3 {
+  font-family: "Arima";
   font-weight: 700;
   color: var(--font-color-gray);
   font-size: 3.75rem;
 }
 
-.landing_page_text>p{
-   font-family: 'Palanquin';
-   color: var(--font-color-gray);
-   font-size: 1.75rem;
-  
+.landing_page_text > p {
+  font-family: "Palanquin";
+  color: var(--font-color-gray);
+  font-size: 1.75rem;
 }
-
-
-
 
 .contact_form {
   display: flex;
@@ -71,7 +87,6 @@ h3{
   padding: 16px 0 56px 0;
 }
 
-
 .faq_heading {
   display: flex;
   justify-content: center;
@@ -80,7 +95,7 @@ h3{
   gap: 16px;
 }
 
-.faq_heading>img {
+.faq_heading > img {
   width: 48px;
 }
 
@@ -99,26 +114,23 @@ h3{
   padding: 16px 14px;
 }
 
-.faq_box>summary {
+.faq_box > summary {
   width: 100%;
-  font-family: 'Palanquin';
+  font-family: "Palanquin";
   font-size: 1.5rem;
   font-weight: bold;
   color: var(--font-color-gray);
 
   display: flex;
   justify-content: space-between;
-
 }
 
-  
-
-.faq_box>summary::marker {
+.faq_box > summary::marker {
   content: icon;
 }
 
-.faq_box>p {
-  font-family: 'Palanquin';
+.faq_box > p {
+  font-family: "Palanquin";
   color: var(--font-color-gray);
   background-color: white;
   font-size: 1rem;
@@ -127,7 +139,7 @@ h3{
   border-radius: 5px;
 }
 
-.contact_form{
+.contact_form {
   display: flex;
   justify-content: center;
 }
@@ -153,7 +165,6 @@ h3{
   justify-content: space-between;
   gap: 16px;
   width: 100%;
-  
 }
 
 .input_form {
@@ -178,11 +189,10 @@ textarea {
 }
 
 .container {
-  
   display: flex;
   justify-content: center;
   gap: 12px;
-  
+
   font-family: "Palanquin";
   font-weight: 400;
   font-size: 15px;
@@ -190,7 +200,6 @@ textarea {
 
 input[type="checkbox"]:hover {
   color: var(--secondary-yellow-color);
-  
 }
 
 s {
@@ -199,8 +208,10 @@ s {
   text-decoration: none;
 }
 
-.btn {display: flex;
-justify-content: center;}
+.btn {
+  display: flex;
+  justify-content: center;
+}
 
 input[type="submit"] {
   width: 140px;
@@ -212,11 +223,13 @@ input[type="submit"] {
   font-size: 24px;
   font-weight: 700;
   color: var(--secondary-yellow-color);
-
-
 }
 
 @media screen and (min-width: 1440px) {
+.landing_page {
+  padding: 0 max(120px, calc(50% - 720px));
+}
+
   .header_content {
     padding: 32px max(120px, calc(50% - 720px));
   }
