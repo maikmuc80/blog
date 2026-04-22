@@ -12,12 +12,28 @@ header {
     gap: 100px;
 }
 
-.nav_bar>a {
+.nav_bar a {
+    width: 100%;
     font-family: 'Arima';
     font-size: 1.5rem;
     color: rgba(248, 245, 235, 1);
+    
     text-decoration: none;
+ 
 }
+
+.nav_bar a:hover{
+    color: var(--secondary-yellow-color);
+
+ 
+  /* background-image: url(assets\icons\hover_effect.png);
+  background-size: 100% 6px;
+  background-position: bottom; */
+
+
+}
+
+
 
 .nav_bar>img {
     height: 72px;
