@@ -165,19 +165,33 @@ label {
   font-family: "Palanquin";
   font-weight: 500;
   font-size: 1.5rem;
+  color: var(--font-color-gray);
 }
 
 textarea {
   resize: none;
   width: 100%;
-  height: 30px;
+  height: 50px;
+  outline: none;
+  caret-color: var(--primary-green-color);
+
+  font-family: "Palanquin";
+  font-weight: 500;
+  color: var(--primary-green-color);
+  font-size: 1.5rem;
+  line-height: 150%;
+
   border: none;
   border-bottom: 1px solid var(--font-color-gray);
 }
 
 .container {
   display: grid;
+  grid-template-areas:
+   "input label" 
+   ". p";
   grid-template-columns: 1em auto;
+  row-gap: 8px;
   margin-left: auto;
   margin-right: auto;
   width: 540px;
@@ -190,11 +204,23 @@ textarea {
   font-weight: 400;
   font-size: 15px;
   color: rgba(84, 55, 13, 1);
+  grid-area: label;
+}
+
+.container p {
+  font-family: "Palanquin";
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(185, 16, 47, 1);
+  grid-area: p;
+
+  display: none;
 }
 
 input[type="checkbox"] {
   appearance: none;
   margin: 0;
+  grid-area: input;
 
   font: inherit;
   color: rgba(84, 55, 13, 1);
@@ -208,9 +234,8 @@ input[type="checkbox"] {
   place-content: center;
 }
 
-input[type="checkbox"]:not(:disabled):hover{
+input[type="checkbox"]:not(:disabled):hover {
   box-shadow: inset 2em 1em var(--secondary-yellow-color);
-  
 }
 
 input[type="checkbox"]::before {
@@ -228,6 +253,9 @@ input[type="checkbox"]::before {
 input[type="checkbox"]:checked::before {
   transform: scale(1);
 }
+
+
+
 
 s {
   color: var(--primary-green-color);
