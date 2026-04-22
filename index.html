@@ -12,28 +12,35 @@
     <link rel="stylesheet" href="./assets/style/highlights.css" />
 
     <title>Blog</title>
-    <link rel="icon" type="image/x-icon" href="./assets/icons/logo 03 1.png">
+    <link rel="icon" type="image/x-icon" href="./assets/icons/logo 03 1.png" />
   </head>
 
   <body>
     <header class="header_content">
-        <nav class="nav_bar">
-            <img src="./assets/icons/logo 03 1.png" alt="Travelblog_logo" />
-            <a href="#highlights">Highlights</a>
-            <a href="#faq">FAQ</a>
-            <a href="#contact">Contact</a>
-        </nav>
+      <nav class="nav_bar">
+        <img src="./assets/icons/logo 03 1.png" alt="Travelblog_logo" />
+        <a href="#highlights">Highlights</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </header>
 
     <section class="landing_page">
-        <article class="landing_page_text">
-            <h3>Cappadocia</h3>
-            <p>From sunrise balloons to hidden cave dwellings, every moment feels unreal in the best way.</p>
-        </article>
-        <div>
-        <img src="./assets/img/landing_background.png" alt="" class="index">
-        <img src="./assets/img/header photo.png" alt="image_of_a_couple" class="index2">
-        </div>
+      <article class="landing_page_text">
+        <h3>Cappadocia</h3>
+        <p>
+          From sunrise balloons to hidden cave dwellings, every moment feels
+          unreal in the best way.
+        </p>
+      </article>
+      <div>
+        <img src="./assets/img/landing_background.png" alt="" class="index" />
+        <img
+          src="./assets/img/header photo.png"
+          alt="image_of_a_couple"
+          class="index2"
+        />
+      </div>
     </section>
 
     <main class="main_content">
@@ -230,13 +237,24 @@
           <label for="subject">How can I help?</label>
           <textarea name="subject" id="subject"></textarea>
 
-          <label class="container">
-            <input type="checkbox" id="checkbox" unchecked />
-            <label for="checkbox">I've read the <s>privacy policy</s> and agree to the processing of
-            my data as outlined.</label>
+          <svg url="/assets/icons/check.svg" style="display: none">
+            <symbol id="checkmark" viewBox="0 0 24 24">
+              <path
+                stroke-linecap="round"
+                stroke-miterlimit="10"
+                fill="none"
+                d="M22.9 3.7l-15.2 16.6-6.6-7.1"
+              ></path>
+            </symbol>
+          </svg>
 
-            
-          </label>
+          <div class="container">
+            <input type="checkbox" id="checkbox" unchecked />
+            <label for="checkbox"
+              >I've read the <s>privacy policy</s> and agree to the processing
+              of my data as outlined.</label
+            >
+          </div>
           <div class="btn">
             <button type="submit">Send</button>
           </div>
@@ -245,21 +263,31 @@
     </main>
 
     <footer class="footer_content">
-        <div class="footer_imprint">
-            <img src="./assets/icons/copyright.svg" alt="copyright_icon" />
-            <div class="footer_imprint_text">
-                <p>Travel Blog 2026</p>
-                <p>Imprint</p>
-                <p>Cookie Preferences</p>
-            </div>
+      <div class="footer_imprint">
+        <img src="./assets/icons/copyright.svg" alt="copyright_icon" />
+        <div class="footer_imprint_text">
+          <p>Travel Blog 2026</p>
+          <p>Imprint</p>
+          <p>Cookie Preferences</p>
         </div>
+      </div>
 
-        <div class="footer_socialmedia">
-            <a href="https://www.tiktok.com/de-DE/" target="blank"><img src="./assets/icons/Tiktok_icon 1.png"alt="tiktok_icon" /></a>
-            <a href="https://www.youtube.com/" target="blank"><img src="./assets/icons/youtube.png" alt="youtube_icon" /></a>
-            <a href="https://www.facebook.com/" target="blank"><img src="./assets/icons/facebook.png" alt="facebook_icon" /></a>
-            <a href="https://www.instagram.com/" target="blank"><img src="./assets/icons/Instagram_logo_2016 1.png"alt="instagram_icon" /></a>
-        </div>
+      <div class="footer_socialmedia">
+        <a href="https://www.tiktok.com/de-DE/" target="blank"
+          ><img src="./assets/icons/Tiktok_icon 1.png" alt="tiktok_icon"
+        /></a>
+        <a href="https://www.youtube.com/" target="blank"
+          ><img src="./assets/icons/youtube.png" alt="youtube_icon"
+        /></a>
+        <a href="https://www.facebook.com/" target="blank"
+          ><img src="./assets/icons/facebook.png" alt="facebook_icon"
+        /></a>
+        <a href="https://www.instagram.com/" target="blank"
+          ><img
+            src="./assets/icons/Instagram_logo_2016 1.png"
+            alt="instagram_icon"
+        /></a>
+      </div>
     </footer>
   </body>
 </html>
