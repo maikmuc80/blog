@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
 
-    width: 1200px;
+    width: 100%;
 }
 
 .headline_highlights {
@@ -13,7 +13,7 @@
     justify-content: center;
     align-items: center;
     padding-bottom: 88px;
-    width: 1200px; 
+    width: 100%; 
 }
 
 .headline_highlights_h2 {
