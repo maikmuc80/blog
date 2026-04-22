@@ -6,8 +6,6 @@ main {
 
 .landing_page{
   height: 500px;
-  background-color: var(--secondary-yellow-color);
-
   display: flex;
 }
 
