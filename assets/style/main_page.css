@@ -66,7 +66,7 @@ h3 {
 }
 @keyframes shiftLeftText {
   from { transform: translate(-50%, -50%); }
-  to { transform: translate(-180%, -50%); } /* Text wandert mit nach links */
+  to { transform: translate(-180%, -50%); } 
 }
 .bild_gelb_4 {
   z-index: 1;
