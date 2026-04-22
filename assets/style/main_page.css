@@ -1,5 +1,63 @@
-main{
-    display: flex;
-    flex-direction: column;
-    padding: 120px;
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 120px;
+}
+
+.contact_form {
+
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 56px;
+}
+
+.contact_form p {
+  font-family: "Palanquin";
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--font-color-gray);
+  text-align: center;
+}
+
+.heading_contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+
+  padding: 0 56px;
+}
+
+.heading_contact img {
+  /* border: 1px solid var(--secondary-yellow-color);
+  padding: 5px; */
+  width: 48px;
+  height: auto;
+}
+
+.heading_contact p {
+  font-size: 3.5rem;
+  color: var(--primary-green-color);
+  font-family: "Arima";
+  font-style: normal;
+  font-weight: 700;
+}
+
+.info {
+  line-height: 150%;
+  padding: 16px 0 56px 0;
+}
+
+@media screen and (min-width: 1440px) {
+  .header_content {
+    padding: 32px max(120px, calc(50% - 720px));
+  }
+
+
+  .footer_content {
+    padding: 60px max(120px, calc(50% - 720px));
+  }
 }
