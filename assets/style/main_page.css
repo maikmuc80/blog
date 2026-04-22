@@ -14,8 +14,6 @@ h3 {
   display: flex;
   flex-direction: column;
   padding: 0px max(0px, calc(50% - 720px));
-  
-
 }
 .header_pic_wrapper {
   position: relative;
@@ -23,7 +21,7 @@ h3 {
   height: 515px;
 }
 
-.header_pic_wrapper img, 
+.header_pic_wrapper img,
 .landing_page_text {
   position: absolute;
   transition: transform 0.8s ease-in-out;
@@ -44,9 +42,9 @@ h3 {
 }
 
 .landing_page_text {
-  animation: 
-    slideInText 1s forwards 0.5s, 
-    shiftLeftText 2s forwards 4s; 
+  animation:
+    slideInText 1s forwards 0.5s,
+    shiftLeftText 2s forwards 4s;
 }
 .bild_gelb_2 {
   z-index: 5;
@@ -56,7 +54,7 @@ h3 {
   position: absolute;
   top: 0;
   left: 0;
-  
+
   z-index: 4;
 }
 @keyframes shiftLeft {
@@ -65,8 +63,12 @@ h3 {
   }
 }
 @keyframes shiftLeftText {
-  from { transform: translate(-50%, -50%); }
-  to { transform: translate(-180%, -50%); } /* Text wandert mit nach links */
+  from {
+    transform: translate(-50%, -50%);
+  }
+  to {
+    transform: translate(-180%, -50%);
+  } /* Text wandert mit nach links */
 }
 .bild_gelb_4 {
   z-index: 1;
@@ -86,21 +88,6 @@ h3 {
   line-height: 1.1;
 }
 
-.contact_form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0 56px;
-}
-
-.contact_form p {
-  font-family: "Palanquin";
-  font-size: 1.5rem;
-  font-weight: 500;
-  color: var(--font-color-gray);
-  text-align: center;
-}
 
 .heading_contact {
   display: flex;
@@ -126,10 +113,7 @@ h3 {
   font-weight: 700;
 }
 
-.info {
-  line-height: 150%;
-  padding: 16px 0 56px 0;
-}
+
 
 .faq_heading {
   display: flex;
@@ -183,10 +167,19 @@ details[open] img {
   border-radius: 5px;
 }
 
+
 .contact_form {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  padding: 56px 56px 0;
 }
+
+/* .contact_form p {
+  
+  text-align: center;
+} */
 
 .contact_form_inputs {
   width: 100%;
@@ -218,6 +211,17 @@ details[open] img {
   width: 100%;
 }
 
+.info {
+  line-height: 150%;
+  padding: 16px 0 56px 0;
+
+  font-family: "Palanquin";
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--font-color-gray);
+  text-align: center;
+}
+
 label {
   font-family: "Palanquin";
   font-weight: 500;
@@ -245,13 +249,14 @@ textarea {
 .container {
   display: grid;
   grid-template-areas:
-   "input label" 
-   ". p";
+    "input label"
+    ". p";
   grid-template-columns: 1em auto;
   row-gap: 8px;
   margin-left: auto;
   margin-right: auto;
   width: 540px;
+  height: 70px;
 
   gap: 15px;
 }
@@ -311,8 +316,14 @@ input[type="checkbox"]:checked::before {
   transform: scale(1);
 }
 
+form:invalid .error {
+  display: block;
+}
 
-
+form:invalid button {
+  opacity: 0.3;
+  pointer-events: none;
+}
 
 s {
   color: var(--primary-green-color);
@@ -323,7 +334,7 @@ s {
 .btn {
   display: flex;
   justify-content: center;
-  padding: 44px 0 60px 0;
+  cursor: pointer;
 }
 
 button[type="submit"] {
@@ -370,7 +381,6 @@ button:active {
 
   .header_content {
     padding: 32px max(120px, calc(50% - 720px));
-   
   }
 
   .main_content {
