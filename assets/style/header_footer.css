@@ -41,12 +41,12 @@ align-items: center;
     padding: 4px;
 }
 
-.footer_imprint-text{
+.footer_imprint_text{
     display: flex;
     gap: 72px;
 }
 
-.footer_imprint-text>p{
+.footer_imprint_text>p{
     font-family: 'Palanquin';
     color: rgba(248, 245, 235, 1);
     white-space: nowrap;
