@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./assets/style/standart.css">
     <link rel="stylesheet" href="./assets/style/fonts.css">
     <link rel="stylesheet" href="./assets/style/main_page.css">
+    <link rel="stylesheet" href="./assets/style/highlights.css">
     <title>Blog</title>
 </head>
 
@@ -26,8 +27,57 @@
 
 
     <main>
-        <section>
+        <section class="highlights">
+            <div class="headline_highlights">
+                <div class="headline_highlights_h2">
+                    <img src="./assets/icons/rocket_launch.svg" alt="Icon Rocket">
+                    <h2>Highlights</h2>
+                </div>
+                <div>
+                    <p>From the vibrant cultures of Asia to the sun-drenched islands of the Caribbean and the serene landscapes of Scandinavia, each destination offers a distinct way to explore the world. </p>
+                </div>
 
+                <div class="slider">
+                    <input type="radio" name="foto" id="img1" checked>
+                    <input type="radio" name="foto" id="img2">
+                    <input type="radio" name="foto" id="img3">
+                    <input type="radio" name="foto" id="img4">
+
+                    <div class="bilder-ebene">
+                        <img src="/assets/img/beach.jpg" class="pic1">
+                        <img src="/assets/img/copenhagen.jpg" class="pic2">
+                        <img src="/assets/img/pattaya.jpg" class="pic3">
+                        <img src="/assets/img/mountain.jpg" class="pic4">
+                    </div>
+
+                    <div class="slider_description">
+                        <div class="slider_description_item" id="desc1">
+                            <h3>The World’s Most Breathtaking Beaches</h3>
+                            <p>From powder-soft white sands to dramatic coastlines kissed by turquoise waves, these beaches are more than destinations — they’re feelings.</p>
+                        </div>
+                        <div class="slider_description_item" id="desc2">
+                            <h3>Copenhagen in 3 Days: Big Experiences, Smart Spending</h3>
+                            <p>Discover Copenhagen, where historic charm meets modern design, vibrant cycling culture and waterfront living.</p>
+                        </div>
+                        <div class="slider_description_item" id="desc3">
+                            <h3>Pattaya Pulse: Food, Sun and Neon Nights</h3>
+                            <p>From bustling promenades to nearby islands, the city offers an energetic and diverse escape. Discover Pattaya City,  with vibrant nightlife and rich cultural landmarks.</p>
+                        </div>
+                        <div class="slider_description_item" id="desc4">
+                            <h3>Mountain Fuji</h3>
+                            <p>The most iconic mountain and an active volcano located about 100 kilometers southwest of Tokyo. Written with the characters for “wealth” and “samurai,” Fuji’s name evokes a sense of strength, honor, and enduring prestige.</p>
+                        </div>
+                    </div>
+
+                    <div class="controls">
+                        <label for="img1"></label>
+                        <label for="img2"></label>
+                        <label for="img3"></label>
+                        <label for="img4"></label>
+                    </div>
+                </div>
+                
+            </div>
         </section>
         <section>
 
