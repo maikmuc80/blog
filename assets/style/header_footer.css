@@ -15,38 +15,30 @@ header {
 .nav_bar_link {
     position: relative;
 }
+
 .nav_bar_link img {
     position: absolute;
     top: 50%;
     left: -5%;
+    display: none;
 }
+
+/* .nav_bar_link a:hover {
+    display: block;
+} */
+
+
 .nav_bar a {
     width: 100%;
     font-family: 'Arima';
     font-size: 1.5rem;
     color: rgba(248, 245, 235, 1);
     text-decoration: none;
-
 }
-
-/* .nav_bar_link_container{
-    min-width: 110px;
-    display: inline-block;
-    background-image: url(assets\icons\hover.svg);
-    background-position: 0% 100%;
-    background-repeat: no-repeat;
-    background-size: 0% 10px;
-    transition: background-size 0.3s;
-}
-
-.nav_bar_link_container:hover{
-    background-size: 100% 10px;
-} */
 
 .nav_bar a:hover {
     color: var(--secondary-yellow-color);
 }
-
 
 
 .nav_bar>img {
@@ -83,7 +75,7 @@ footer {
     font-size: 1rem;
 }
 
-.footer_imprint_text>a{
+.footer_imprint_text>a {
     font-family: 'Palanquin';
     color: rgba(248, 245, 235, 1);
     white-space: nowrap;
