@@ -6,20 +6,20 @@ header {
     padding: 32px 120px;
 }
 
-.nav-bar {
+.nav_bar {
     display: flex;
     align-items: center;
     gap: 100px;
 }
 
-.nav-bar>a {
+.nav_bar>a {
     font-family: 'Arima';
     font-size: 1.5rem;
     color: rgba(248, 245, 235, 1);
     text-decoration: none;
 }
 
-.nav-bar>img {
+.nav_bar>img {
     height: 72px;
 }
 
@@ -31,29 +31,29 @@ footer {
     padding: 60px 120px;
 }
 
-.footer-imprint{
+.footer_imprint{
 display: flex;
 align-items: center;
 }
 
-.footer-imprint>img{
+.footer_imprint>img{
     height: 24px;
     padding: 4px;
 }
 
-.footer-imprint-text{
+.footer_imprint_text{
     display: flex;
     gap: 72px;
 }
 
-.footer-imprint-text>p{
+.footer_imprint_text>p{
     font-family: 'Palanquin';
     color: rgba(248, 245, 235, 1);
     white-space: nowrap;
     font-size: 1rem;
 }
 
-.footer-socialmedia{
+.footer_socialmedia{
     display: flex;
     gap: 16px;
 }

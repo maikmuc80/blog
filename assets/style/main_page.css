@@ -4,6 +4,30 @@ main {
   padding: 120px;
 }
 
+.landing_page{
+  height: 500px;
+  background-color: var(--secondary-yellow-color);
+
+  display: flex;
+}
+
+h3{
+  font-family: 'Arima';
+  font-weight: 700;
+  color: var(--font-color-gray);
+  font-size: 3.75rem;
+}
+
+.landing_page_text>p{
+   font-family: 'Palanquin';
+   color: var(--font-color-gray);
+   font-size: 1.75rem;
+  
+}
+
+
+
+
 .contact_form {
   display: flex;
   flex-direction: column;
