@@ -12,6 +12,14 @@ header {
     gap: 100px;
 }
 
+.nav_bar_link {
+    position: relative;
+}
+.nav_bar_link img {
+    position: absolute;
+    top: 50%;
+    left: -5%;
+}
 .nav_bar a {
     width: 100%;
     font-family: 'Arima';
