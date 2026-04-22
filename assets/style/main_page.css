@@ -154,7 +154,8 @@ h3 {
 }
 
 details[open] img {
-  transform: rotate(180deg);
+  transform: rotate(-180deg);
+  transition: transform 0.5s ease;
 }
 
 .faq_box > p {
@@ -384,7 +385,7 @@ button:active {
   }
 
   .main_content {
-    padding: 32px max(120px, calc(50% - 720px));
+    padding: 88px max(120px, calc(50% - 720px));
   }
 
   .footer_content {
