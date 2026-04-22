@@ -169,8 +169,8 @@ h3 {
   justify-content: space-between;
 }
 
-.faq_box > summary::marker {
-  content: icon;
+details[open] img {
+  transform: rotate(180deg);
 }
 
 .faq_box > p {
@@ -233,17 +233,57 @@ textarea {
 }
 
 .container {
-  display: flex;
-  justify-content: center;
-  gap: 12px;
+  display: grid;
+  grid-template-columns: 1em auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 540px;
 
+  gap: 15px;
+}
+
+.container label {
   font-family: "Palanquin";
   font-weight: 400;
   font-size: 15px;
+  color: rgba(84, 55, 13, 1);
 }
 
-input[type="checkbox"]:hover {
-  color: var(--secondary-yellow-color);
+input[type="checkbox"] {
+  appearance: none;
+  margin: 0;
+
+  font: inherit;
+  color: rgba(84, 55, 13, 1);
+  width: 24px;
+  height: 24px;
+  border: 0.15em solid rgba(84, 55, 13, 1);
+  border-radius: 4px;
+  transform: translateY(2px);
+
+  display: grid;
+  place-content: center;
+}
+
+input[type="checkbox"]:not(:disabled):hover{
+  box-shadow: inset 2em 1em var(--secondary-yellow-color);
+  
+}
+
+input[type="checkbox"]::before {
+  content: url(/assets/icons/check.svg);
+  width: 24px;
+  height: 24px;
+  transform: scale(0);
+  border-radius: 3px;
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 2em 1em var(--primary-green-color);
+  display: grid;
+  place-content: center;
+}
+
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
 }
 
 s {
@@ -255,18 +295,44 @@ s {
 .btn {
   display: flex;
   justify-content: center;
+  padding: 44px 0 60px 0;
 }
 
-input[type="submit"] {
+button[type="submit"] {
   width: 140px;
   height: 50px;
-  background-color: var(--primary-green-color);
+  background-color: white;
+  gap: 10px;
+
   border-radius: 40px;
+  border-color: rgba(48, 48, 48, 0.5);
+
   padding: 10px;
+
   font-family: "Arima";
+  color: var(--button-color);
   font-size: 24px;
   font-weight: 700;
+  line-height: 100%;
+
+  transition: all 250ms ease-in-out;
+}
+
+button:hover {
+  border: none;
+  background-color: var(--primary-green-color);
+
   color: var(--secondary-yellow-color);
+}
+
+button:active {
+  /* https://smoothshadows.com/#djEsMSw1LDAuMyw0LDQsMCwjNGVhNDg3LCNmM2Y0ZjYsI2ZmZmZmZiwy */
+  box-shadow:
+    0px 0px 0px rgba(78, 164, 135, 0.06),
+    0px 1px 1px rgba(78, 164, 135, 0.12),
+    0px 1px 1px rgba(78, 164, 135, 0.18),
+    0px 3px 3px rgba(78, 164, 135, 0.24),
+    0px 4px 4px rgba(78, 164, 135, 0.3);
 }
 
 @media screen and (min-width: 1440px) {
