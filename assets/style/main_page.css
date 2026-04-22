@@ -14,8 +14,6 @@ h3 {
   display: flex;
   flex-direction: column;
   padding: 0px max(0px, calc(50% - 720px));
-  
-
 }
 .header_pic_wrapper {
   position: relative;
@@ -23,7 +21,7 @@ h3 {
   height: 515px;
 }
 
-.header_pic_wrapper img, 
+.header_pic_wrapper img,
 .landing_page_text {
   position: absolute;
   transition: transform 0.8s ease-in-out;
@@ -44,9 +42,9 @@ h3 {
 }
 
 .landing_page_text {
-  animation: 
-    slideInText 1s forwards 0.5s, 
-    shiftLeftText 2s forwards 4s; 
+  animation:
+    slideInText 1s forwards 0.5s,
+    shiftLeftText 2s forwards 4s;
 }
 .bild_gelb_2 {
   z-index: 5;
@@ -56,7 +54,7 @@ h3 {
   position: absolute;
   top: 0;
   left: 0;
-  
+
   z-index: 4;
 }
 @keyframes shiftLeft {
@@ -86,21 +84,6 @@ h3 {
   line-height: 1.1;
 }
 
-.contact_form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0 56px;
-}
-
-.contact_form p {
-  font-family: "Palanquin";
-  font-size: 1.5rem;
-  font-weight: 500;
-  color: var(--font-color-gray);
-  text-align: center;
-}
 
 .heading_contact {
   display: flex;
@@ -126,10 +109,7 @@ h3 {
   font-weight: 700;
 }
 
-.info {
-  line-height: 150%;
-  padding: 16px 0 56px 0;
-}
+
 
 .faq_heading {
   display: flex;
@@ -170,7 +150,8 @@ h3 {
 }
 
 details[open] img {
-  transform: rotate(180deg);
+  transform: rotate(-180deg);
+  transition: transform 0.5s ease;
 }
 
 .faq_box > p {
@@ -183,10 +164,19 @@ details[open] img {
   border-radius: 5px;
 }
 
+
 .contact_form {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  padding: 56px 56px 0;
 }
+
+/* .contact_form p {
+  
+  text-align: center;
+} */
 
 .contact_form_inputs {
   width: 100%;
@@ -207,7 +197,7 @@ details[open] img {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap: 16px;
+  gap: 46px;
   width: 100%;
 }
 
@@ -218,26 +208,52 @@ details[open] img {
   width: 100%;
 }
 
+.info {
+  line-height: 110%;
+  padding: 16px 0 56px 0;
+
+  font-family: "Palanquin";
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--font-color-gray);
+  text-align: center;
+}
+
 label {
   font-family: "Palanquin";
   font-weight: 500;
   font-size: 1.5rem;
+  color: var(--font-color-gray);
 }
 
 textarea {
   resize: none;
   width: 100%;
-  height: 30px;
+  height: 50px;
+  outline: none;
+  caret-color: var(--primary-green-color);
+
+  font-family: "Palanquin";
+  font-weight: 500;
+  color: var(--primary-green-color);
+  font-size: 1.5rem;
+  line-height: 150%;
+
   border: none;
   border-bottom: 1px solid var(--font-color-gray);
 }
 
 .container {
   display: grid;
+  grid-template-areas:
+    "input label"
+    ". p";
   grid-template-columns: 1em auto;
+  row-gap: 8px;
   margin-left: auto;
   margin-right: auto;
   width: 540px;
+  height: 70px;
 
   gap: 15px;
 }
@@ -247,11 +263,23 @@ textarea {
   font-weight: 400;
   font-size: 15px;
   color: rgba(84, 55, 13, 1);
+  grid-area: label;
+}
+
+.container p {
+  font-family: "Palanquin";
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(185, 16, 47, 1);
+  grid-area: p;
+
+  display: none;
 }
 
 input[type="checkbox"] {
   appearance: none;
   margin: 0;
+  grid-area: input;
 
   font: inherit;
   color: rgba(84, 55, 13, 1);
@@ -265,9 +293,8 @@ input[type="checkbox"] {
   place-content: center;
 }
 
-input[type="checkbox"]:not(:disabled):hover{
+input[type="checkbox"]:not(:disabled):hover {
   box-shadow: inset 2em 1em var(--secondary-yellow-color);
-  
 }
 
 input[type="checkbox"]::before {
@@ -286,6 +313,15 @@ input[type="checkbox"]:checked::before {
   transform: scale(1);
 }
 
+form:invalid .error {
+  display: block;
+}
+
+form:invalid button {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
 s {
   color: var(--primary-green-color);
   font-weight: 500;
@@ -295,7 +331,7 @@ s {
 .btn {
   display: flex;
   justify-content: center;
-  padding: 44px 0 60px 0;
+  cursor: pointer;
 }
 
 button[type="submit"] {
@@ -342,11 +378,10 @@ button:active {
 
   .header_content {
     padding: 32px max(120px, calc(50% - 720px));
-   
   }
 
   .main_content {
-    padding: 32px max(120px, calc(50% - 720px));
+    padding: 88px max(120px, calc(50% - 720px));
   }
 
   .footer_content {

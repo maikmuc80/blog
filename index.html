@@ -215,7 +215,7 @@
             </p>
           </article>
         </div>
-        <form action="" class="contact_form_inputs">
+        <form action="/action_page.php" class="contact_form_inputs">
           <div class="input">
             <div class="input_form">
               <label for="name">What's your name?</label>
@@ -228,8 +228,8 @@
             </div>
           </div>
 
-          <label for="subject">How can I help?</label>
-          <textarea name="subject" id="subject"></textarea>
+          <label for="text">How can I help?</label>
+          <textarea name="text" id="text"></textarea>
 
           <svg url="/assets/icons/check.svg" style="display: none">
             <symbol id="checkmark" viewBox="0 0 24 24">
@@ -243,14 +243,15 @@
           </svg>
 
           <div class="container">
-            <input type="checkbox" id="checkbox" unchecked />
+            <input type="checkbox" id="checkbox" unchecked required/>
             <label for="checkbox"
               >I've read the <s>privacy policy</s> and agree to the processing
               of my data as outlined.</label
             >
+            <p class="error">Please accept the privacy policy.</p>
           </div>
           <div class="btn">
-            <button type="submit">Send</button>
+            <button type="submit" formtarget="_blank">Send</button>
           </div>
         </form>
       </section>
@@ -261,8 +262,8 @@
         <img src="./assets/icons/copyright.svg" alt="copyright_icon" />
         <div class="footer_imprint_text">
           <p>Travel Blog 2026</p>
-          <p>Imprint</p>
-          <p>Cookie Preferences</p>
+          <a href="">Imprint</a>
+          <a href="">Cookie Preferences</a>
         </div>
       </div>
 
