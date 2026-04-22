@@ -5,8 +5,6 @@ main {
 }
 
 .contact_form {
-
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -51,11 +49,68 @@ main {
   padding: 16px 0 56px 0;
 }
 
+.contact_form_inputs {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.contact_inputs {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 17px;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  
+}
+
+label {
+  font-family: "Palanquin";
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+textarea {
+  resize: none;
+  width: 100%;
+  height: 30px;
+  border: none;
+  border-bottom: 1px solid var(--font-color-gray);
+}
+
+.container {
+  
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  
+  font-family: "Palanquin";
+  font-weight: 400;
+  font-size: 15px;
+}
+
+input[type="checkbox"]:hover {
+  color: var(--secondary-yellow-color);
+  
+}
+
+s {
+  color: var(--primary-green-color);
+  font-weight: 500;
+  text-decoration: none;
+}
+
 @media screen and (min-width: 1440px) {
   .header_content {
     padding: 32px max(120px, calc(50% - 720px));
   }
-
 
   .footer_content {
     padding: 60px max(120px, calc(50% - 720px));
