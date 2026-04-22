@@ -346,7 +346,7 @@ button:active {
   }
 
   .main_content {
-    padding: 32px max(120px, calc(50% - 720px));
+    padding: 88px max(120px, calc(50% - 720px));
   }
 
   .footer_content {
