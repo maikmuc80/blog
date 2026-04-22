@@ -49,6 +49,62 @@ main {
   padding: 16px 0 56px 0;
 }
 
+
+.faq_heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 56px;
+  gap: 16px;
+}
+
+.faq_heading>img {
+  width: 48px;
+}
+
+.faq_wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 48px 0px;
+  gap: 32px;
+}
+
+.faq_box {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--secondary-yellow-color);
+  border-radius: 12px;
+  padding: 16px 14px;
+}
+
+.faq_box>summary {
+  width: 100%;
+  font-family: 'Palanquin';
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--font-color-gray);
+
+  display: flex;
+  justify-content: space-between;
+
+}
+
+  
+
+.faq_box>summary::marker {
+  content: icon;
+}
+
+.faq_box>p {
+  font-family: 'Palanquin';
+  color: var(--font-color-gray);
+  background-color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 4px 10px;
+  border-radius: 5px;
+}
+
 .contact_form_inputs {
   width: 100%;
   position: relative;
