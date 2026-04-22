@@ -170,7 +170,8 @@ h3 {
 }
 
 details[open] img {
-  transform: rotate(180deg);
+  transform: rotate(-180deg);
+  transition: transform 0.5s ease;
 }
 
 .faq_box > p {
