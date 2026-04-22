@@ -9,9 +9,6 @@ main {
   display: flex;
   width: 100%;
   position: relative;
-  background-image: url(/assets/img/header\ photo.png);
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .landing_page_text {
@@ -226,9 +223,9 @@ input[type="submit"] {
 }
 
 @media screen and (min-width: 1440px) {
-.landing_page {
-  padding: 0 max(120px, calc(50% - 720px));
-}
+  .landing_page {
+    padding: 0 max(120px, calc(50% - 720px));
+  }
 
   .header_content {
     padding: 32px max(120px, calc(50% - 720px));
