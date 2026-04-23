@@ -1,0 +1,365 @@
+h2 {
+  font-family: "Arima";
+  font-weight: 700;
+  font-size: 4rem;
+  color: var(--secondary-yellow-color);
+  line-height: 120%;
+}
+
+.headline {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 40px;
+  width: 100%;
+  padding: 80px 120px 40px;
+}
+
+.headline_top {
+  display: flex;
+}
+
+.headline_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.headline_infos {
+  display: flex;
+  flex-direction: column;
+}
+
+.info_wrapper {
+  display: flex;
+  gap: 32px;
+}
+
+.headline_text {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-right: 20px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.text > h3 {
+  font-family: "Palanquin";
+  font-weight: 600;
+  font-size: 2.5rem;
+  line-height: 120%;
+  color: var(--primary-green-color);
+}
+
+.text p {
+  font-family: "Palanquin";
+  font-weight: 400;
+  font-size: 1.75rem;
+  color: var(--font-color-gray);
+  line-height: 110%;
+  width: 95%;
+}
+
+.headline_infos p {
+  font-family: "Palanquin";
+  font-weight: 400;
+  font-size: 1.75rem;
+  color: var(--font-color-gray);
+  line-height: 110%;
+}
+
+.info_wrapper p {
+  font-family: "Palanquin";
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--font-color-gray);
+  line-height: 120%;
+}
+
+.wrapper_counter {
+  display: flex;
+  gap: 6px;
+}
+.wrapper_counter > img {
+  width: 16px;
+}
+
+.author {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  border-radius: 30px;
+  padding: 16px;
+  background-color: var(--background-green);
+}
+
+.author > img {
+  width: 120px;
+  height: 120px;
+}
+
+.author h3 {
+  font-family: "Arima";
+  font-weight: 700;
+  font-size: 1.13rem;
+  color: var(--font-color-gray);
+  text-align: center;
+}
+
+.author h4 {
+  font-family: "Arima";
+  font-weight: 400;
+  font-size: 1.13rem;
+  color: var(--font-color-gray);
+  text-align: center;
+}
+
+.author p {
+  font-family: "Palanquin";
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--font-color-gray);
+  text-align: center;
+  line-height: 120%;
+}
+
+.headline_bottom p {
+  font-family: "Palanquin";
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 120%;
+  color: var(--font-color-brown);
+}
+
+.rain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 120px;
+}
+
+.rain_top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding-bottom: 40px;
+}
+
+.rain_top h3 {
+  font-family: "Arima";
+  font-weight: 600;
+  font-size: 2rem;
+  color: var(--font-color-gray);
+}
+
+.rain_top > img {
+  width: 640px;
+  height: 440px;
+  border-radius: 52px;
+  /* https://smoothshadows.com/#djEsMSwxLDAuMjUsMTIsNCwtMiwjMDMwNzEyLCNmM2Y0ZjYsI2ZmZmZmZiwy */
+  box-shadow: -2px 4px 12px rgba(3, 7, 18, 0.25);
+}
+
+.rain_bottom {
+  font-family: "Palanquin";
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: var(--font-color-brown);
+  line-height: 120%;
+
+  padding: 40px 0;
+}
+
+.diagram {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 120px 40px;
+}
+
+.diagram_top {
+  display: flex;
+  gap: 80px;
+  width: 100%;
+  padding-bottom: 40px;
+}
+
+.diagram_top h3 {
+  font-family: "Arima";
+  font-weight: 600;
+  font-size: 2rem;
+  color: var(--font-color-gray);
+}
+
+.diagram_top p {
+  font-family: "Palanquin";
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: var(--font-color-brown);
+  line-height: 120%;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.left p {
+  padding: 24px 0;
+}
+
+.left img {
+  width: 520px;
+  height: 470px;
+  border-radius: 52px;
+  box-shadow: -2px 4px 12px rgba(3, 7, 18, 0.25);
+  object-fit: cover;
+}
+
+.right {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right p {
+  padding: 24px 0 52px;
+}
+
+.right img {
+  width: 520px;
+  height: 470px;
+  border-radius: 52px;
+  box-shadow: -2px 4px 12px rgba(3, 7, 18, 0.25);
+}
+
+.diagram_bottom {
+  font-family: "Palanquin";
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 120%;
+  color: var(--font-color-brown);
+}
+
+.share {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 120px 40px;
+}
+
+.share p {
+  font-family: "Arima";
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 120%;
+  color: var(--font-color-gray);
+  text-align: center;
+  padding: 0 30px;
+}
+
+.share_info {
+  display: flex;
+  position: relative;
+}
+
+.share_info img {
+  transform: translateY(-15px);
+}
+
+.btn_inactive {
+  display: flex;
+  display:none;
+}
+
+.pre_btn {
+  transform: translateY(45px);
+  width: 160px;
+  height: 50px;
+
+  font-family: "Arima";
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 120%;
+  letter-spacing: 5%;
+  color: var(--secondary-yellow-color);
+
+  background-color: var(--primary-green-color);
+  border-radius: 40px;
+  border: none;
+  position: absolute;
+}
+
+.pre_btn img {
+    transform: translateY(5px) translateX(-10px);
+
+}
+
+.btn_active {
+  display: flex;
+  display: non;
+}
+
+.btn_share {
+  transform: translateY(45px);
+  width: 120px;
+  height: 50px;
+
+  font-family: "Arima";
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 120%;
+  letter-spacing: 5%;
+  color: var(--secondary-yellow-color);
+
+  background-color: var(--primary-green-color);
+  border-radius: 40px;
+  border: none;
+  
+}
+
+.button_collapse {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  
+}
+
+.button_collapse img {
+  width: 24px;
+  height: 27px;
+  align-self: flex-end;
+}
+
+.share_links {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.share_links a {
+  font-family: "Arima";
+  font-weight: 600;
+  font-size: 1.15rem;
+  line-height: 120%;
+  letter-spacing: 5%;
+  color: var(--primary-green-color);
+}
+
+@media screen and (min-width: 1440px) {
+  .headline {
+    padding: 80px max(120px, calc(50% - 720px)) 40px;
+  }
+}
