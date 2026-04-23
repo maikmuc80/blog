@@ -4,7 +4,7 @@ main {
   padding: 0 120px 120px 120px;
 }
 
-h3 {
+.landing_page_text>h3 {
   font-family: "Arima";
   font-weight: 700;
   color: var(--font-color-gray);
