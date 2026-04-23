@@ -280,7 +280,7 @@ h2 {
 
 .btn_inactive {
   display: flex;
-  display:none;
+  
 }
 
 .pre_btn {
@@ -298,7 +298,8 @@ h2 {
   background-color: var(--primary-green-color);
   border-radius: 40px;
   border: none;
-  position: absolute;
+  cursor: pointer;
+  
 }
 
 .pre_btn img {
@@ -306,9 +307,13 @@ h2 {
 
 }
 
+.pre_btn::after {
+    display: nne;
+}
+
 .btn_active {
   display: flex;
-  display: non;
+  display: none;
 }
 
 .btn_share {
