@@ -104,29 +104,54 @@ h3 {
     shiftLeftText 2s forwards 4s;
 }
 .bild_gelb_2 {
+  position: absolute;
+  top: -10px;
   z-index: 5;
-  animation: shiftLeft 2s forwards 4s;
+  opacity: 1;
+  animation: fadeout 4s forwards 4s;
 }
 .bild_gelb_3 {
   position: absolute;
-  top: 0;
+  top: -55px;
   left: 0;
   z-index: 4;
-
+  animation: fadein 1s forwards 5s;
+}
+.bild_gelb_4 {
+  
+  z-index: 1;
+  transform: translateY(-30px);
 }
 
-@keyframes shiftLeft {
-  to {
-    transform: translateX(-70%);
+@keyframes fadein {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(+30px);
   }
 }
+
+@keyframes fadeout {
+  0% {
+    transform: translateY(-20px);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(-60%);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-60%, -100px);
+    opacity: 0; 
+  }
+}
+
 @keyframes shiftLeftText {
   from { transform: translate(-50%, -50%); }
   to { transform: translate(-180%, -50%); } 
 }
-.bild_gelb_4 {
-  z-index: 1;
-}
+
 
 .landing_page_text {
   position: absolute;
