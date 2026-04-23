@@ -1,5 +1,8 @@
-.imprint {
+body {
   height: 100vh;
+}
+
+.imprint {
   padding: 56px 120px;
 }
 
