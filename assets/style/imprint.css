@@ -1,0 +1,49 @@
+.imprint {
+  height: 100vh;
+  padding: 56px 120px;
+}
+
+.imprint h1 {
+  padding: 16px;
+}
+
+.imprint p {
+  padding: 16px;
+}
+
+.imprint h2 {
+  padding: 16px;
+}
+
+body {
+  --sb-track-color: #1b1103;
+  --sb-thumb-color: #4ea487;
+  --sb-size: 10px;
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size);
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 5px;
+  border: 1px solid #f1c953;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .imprint {
+    padding: 56px max(120px, calc(50% - 720px));
+  }
+}
