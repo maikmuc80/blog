@@ -4,7 +4,14 @@ main {
   padding: 0 120px 120px 120px;
 }
 
-.landing_page_text>h3 {
+h2 {
+    font-family: 'Arima';
+    font-weight: 700;
+    font-size: 52px;
+    color: var(--primary-green-color);
+}
+
+h3 {
   font-family: "Arima";
   font-weight: 700;
   color: var(--font-color-gray);
