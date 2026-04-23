@@ -28,45 +28,69 @@ h3 {
   height: 515px;
 }
 
-.header_pic_wrapper img,
+.header_pic_wrapper img {
+  position: absolute;
+  transition: transform 3s cubic-bezier(0,-0.3, 0, 0.88);
+}
 .landing_page_text {
   position: absolute;
-  transition: transform 0.8s ease-in-out;
+  transition: transform 1s cubic-bezier(0,-0.3, 0, 0.88);
 }
 
 .landing_page_text {
   top: 50%;
   left: 50%;
   transform: translate(-50%, 200%);
-  animation: slideInText 1s forwards 0.5s;
+  animation: slideInText 2s forwards 0.5s;
   z-index: 10;
 }
 
 .circle{
-  top: 50%;
-  left: 50%;
-  transform: translate(0, 300px);
-  animation: circle 2s forwards 6s;
+  position: absolute;
+  top: 250px;
+  left: 430px;
+  transform: translate(0px, 270px);
+  animation: 
+    circle 4s forwards 5s,
+    circle_rotation 3s cubic-bezier(0.35, 0.57, 0.41, 0.63) 9s infinite;
   z-index: 15;
 }
 
+
 .moon {
-  top: 50%;
-  left: 50%;
-  transform: translate(0, 300px);
-  animation: moon 2s forwards 6s;
+  visibility: hidden;
+  opacity: 0;
+  width: 62px;
+  position: absolute;
+  top: 310px;
+  left: 490px;
+  animation: moon 1s forwards 8s;
+  animation-duration: 5s;
   z-index: 16;
 }
+
 @keyframes moon {
   to {
-    transform: translate(-200px, 200px);
+   visibility: visible;
+    opacity: 1;
   }
 }
+
+
 @keyframes circle {
   to {
-    transform: translate(-120%, -0%);
+    transform: translate(0px, 0px);
   }
 }
+@keyframes circle_rotation {
+   from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 @keyframes slideInText {
   to {
     transform: translate(-50%, -50%);
@@ -86,9 +110,10 @@ h3 {
   position: absolute;
   top: 0;
   left: 0;
-
   z-index: 4;
+
 }
+
 @keyframes shiftLeft {
   to {
     transform: translateX(-70%);
