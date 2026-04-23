@@ -143,6 +143,41 @@ header {
     line-height: 120%;
 }
 
+.video_video{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    padding: 60px 0px;
+}
+
+.video_video>p{
+    font-family: 'Palanquin';
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 120%;
+    color: var(--font-color-brown);
+}
+.video_img{
+    position: relative;
+    width: 100%;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video_img_large{
+    height: 520px;
+    width:auto;
+    border-radius: 50px;
+    position: absolute;
+    z-index: 1;
+}
+.video_img_icon{
+    height: 170px;
+    position: absolute;
+    z-index: 2;
+}
 
 /* footer */
 
