@@ -105,7 +105,7 @@
 .video_video {
     display: flex;
     flex-direction: column;
-  
+
     padding: 60px 0px;
 }
 
@@ -155,16 +155,21 @@
 .video_writing ul {
     padding: 20px 30px;
 
+
 }
+
+.video_tipps_textbox {}
 
 .video_tipps_textbox img {
     z-index: 2;
 }
 
-.video_tipps_textbox ol {
+
+.video_tipps_list {
     background-color: var(--background-green);
+    max-width: 1000px;
     border-radius: 30px;
-    padding: 15px 30px;
+    padding: 15px;
     z-index: 1;
 }
 
