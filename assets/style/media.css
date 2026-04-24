@@ -154,6 +154,10 @@
     padding: 20px;
   }
 
+  .diagram_top {
+    flex-direction: column;
+  }
+
   .diagram_top h3 {
     font-size: 1.5rem;
   }
