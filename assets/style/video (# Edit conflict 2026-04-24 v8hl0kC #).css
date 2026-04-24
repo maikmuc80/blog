@@ -171,7 +171,6 @@
     flex-direction: column;
     align-items: center;
    position: relative;
-   padding: 50px 0px;
     
 }
 
@@ -181,8 +180,8 @@
     width: 190px;
     padding-top: 20px;
     position: absolute;
-    top: -40px ;
-    left: 70px;
+    top: -90px ;
+    left: -10px;
 }
 
 
@@ -242,7 +241,6 @@
 
 .btn_inactive {
   display: flex;
-  padding-left: 50px;
   
 }
 
@@ -262,7 +260,6 @@
   border-radius: 40px;
   border: none;
   cursor: pointer;
-
   
 }
 
@@ -295,7 +292,6 @@
   background-color: var(--primary-green-color);
   border-radius: 40px;
   border: none;
-
   
 }
 
