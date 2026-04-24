@@ -53,7 +53,12 @@ footer {
     gap: 72px;
 }
 
-.footer_imprint_text>p {
+.footer_imprint_c{
+    display: flex;
+    gap: 8px;
+}
+
+.footer_imprint_text p {
     font-family: 'Palanquin';
     color: rgba(248, 245, 235, 1);
     white-space: nowrap;
