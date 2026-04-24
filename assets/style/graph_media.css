@@ -1,4 +1,10 @@
-@media screen and (min-width: 780px) and (max-width: 1037px) {
+@media screen and (min-width: 1281px) and (max-width: 1439px) {
+  .diagram {
+    padding: 40px 80px;
+  }
+}
+
+@media screen and (min-width: 780px) and (max-width: 1280px) {
   .text h2 {
     font-size: 3rem;
   }
@@ -6,15 +12,42 @@
   .text h3 {
     font-size: 1.7rem;
   }
-}
 
-@media screen and (min-width: 480px) and (max-width: 779px) {
+  .text p {
+    font-size: 1.4rem;
+  }
+
   .headline {
-    padding: 80px 40px 40px;
+    padding: 80px 60px 40px;
   }
 
   .headline_top {
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .diagram_top {
+    flex-wrap: wrap;
+  }
+
+  .author {
+    max-width: 300px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 779px) {
+  .nav_bar_link_container {
+    display: none;
+  }
+
+  .headline {
+    padding: 80px 35px 40px;
+  }
+
+  .headline_top {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .headline_text {
@@ -35,15 +68,19 @@
 
   .info_wrapper {
     flex-wrap: wrap;
-    gap: 12px;
+    gap: 8px;
   }
 
   .info_wrapper p {
-    font-size: 1rem;
+    font-size: 0.75rem;
   }
 
   .headline_bottom p {
     font-size: 1.2rem;
+  }
+
+  .author {
+    max-width: 300px;
   }
 
   .rain {
@@ -123,6 +160,10 @@
 }
 
 @media screen and (max-width: 479px) {
+  .nav_bar_link_container {
+    display: none;
+  }
+
   .headline {
     padding: 80px 20px 40px;
   }
@@ -168,6 +209,11 @@
 
   .author {
     width: 100%;
+    height: 330px;
+  }
+
+  .author p {
+    font-size: 0.8rem;
   }
 
   .rain {
