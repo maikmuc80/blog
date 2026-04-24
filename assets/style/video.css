@@ -242,6 +242,7 @@
 
 .btn_inactive {
   display: flex;
+  padding-left: 50px;
   
 }
 
@@ -261,6 +262,7 @@
   border-radius: 40px;
   border: none;
   cursor: pointer;
+
   
 }
 
@@ -293,6 +295,7 @@
   background-color: var(--primary-green-color);
   border-radius: 40px;
   border: none;
+
   
 }
 
