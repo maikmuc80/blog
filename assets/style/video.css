@@ -332,9 +332,159 @@
 }
 
 
-@media screen and (min-width: 769px) and (max-width: 1280px) {}
+@media screen and (min-width: 769px) and (max-width: 1280px) {
+   
+html {
+        font-size: 16px;
+    }
 
-@media screen and (min-width: 480px) and (max-width: 768px) {}
+
+    .video_main {
+        padding: 80px 120px;
+    }
+
+    .video_heading {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .video_heading_counter_wrap {
+        gap: 16px;
+        padding: 20px 0px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .video_heading_counter_wrap p {
+        font-family: 'Palanquin';
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 120%;
+    }
+
+    .video_heading_counter>img {
+        width: 16px;
+    }
+
+    .video_heading_about {
+        max-width: 300px;
+    }
+
+    .video_heading_about h3 {
+        font-size: 16px;
+    }
+
+    .video_heading_about h4 {
+        font-size: 16px
+    }
+
+    .video_heading_about p {
+        font-size: 16px;
+        text-align: center;
+    }
+    
+    /* VIDEO */
+
+    .video_play {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding-top: 40px;
+    }
+
+    .video_play iframe {
+        border-radius: 20px;
+        height: 350px;
+        width: auto;
+        aspect-ratio: 16 / 9;
+    }
+   
+    /* Pro Tipps */
+
+    .video_tipps_textbox img {
+       
+        top: -50px;
+        left: -30px;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+
+html {
+        font-size: 10px;
+    }
+
+
+    .video_main {
+        padding: 70px 30px;
+    }
+
+    .video_heading {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .video_heading_counter_wrap {
+        gap: 16px;
+        padding: 20px 0px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .video_heading_counter_wrap p {
+        font-family: 'Palanquin';
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 120%;
+    }
+
+    .video_heading_counter>img {
+        width: 16px;
+    }
+
+    .video_heading_about {
+        max-width: 300px;
+    }
+
+    .video_heading_about h3 {
+        font-size: 16px;
+    }
+
+    .video_heading_about h4 {
+        font-size: 16px
+    }
+
+    .video_heading_about p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    /* VIDEO */
+
+    .video_play {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding-top: 40px;
+    }
+
+    .video_play iframe {
+        border-radius: 20px;
+        height: 250px;
+        width: auto;
+        aspect-ratio: 16 / 9;
+    }
+
+     /* Pro Tipps */
+
+    .video_tipps_textbox img {
+        height: auto;
+        width: 150px;
+        top: -30px;
+        left: -10px;
+    }
+
+}
 
 @media screen and (max-width: 479px) {
 
@@ -350,7 +500,6 @@
     .video_heading {
         flex-direction: column;
     }
-
 
     .video_heading_counter_wrap {
         gap: 16px;
@@ -369,7 +518,6 @@
         width: 16px;
     }
 
-
     .video_heading_about {
         width: 100%;
     }
@@ -387,8 +535,6 @@
         text-align: center;
     }
 
-
-
     /* VIDEO */
 
     .video_play {
@@ -403,8 +549,6 @@
         height: 200px;
         width: auto;
         aspect-ratio: 16 / 9;
-
-
     }
 
     /* Pro Tipps */
@@ -416,5 +560,12 @@
         left: -10px;
     }
 
+
+}
+
+@media screen and (min-width: 1440px) {
+  .video_main {
+    padding: 0 max(120px, calc(50% - 720px));
+  }
 
 }
