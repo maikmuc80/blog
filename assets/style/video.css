@@ -217,18 +217,48 @@
     padding-left: 8px;
 }
 
-.video_share p{
+.video_share {
+    display: flex;
+    justify-content: center;
+}
+
+.video_share p {
     font-family: 'Arima';
     font-weight: 500;
     line-height: 120%;
     font-size: 1.5rem;
     color: var(--font-color-gray);
+    text-align: center;
+    padding: 30px 0px;
+}
+
+.video_share_info {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 16px;
+    position: relative;
+}
+
+.video_share_info>img {
+    width: 80px;
+    position: absolute;
+    top: -40px;
+    left: -10px;
+}
+
+.video_share_info>a{
+    padding-top: 20px;
 }
 
 
+
+
+
+
 @media screen and (min-width: 769px) and (max-width: 1280px) {
-   
-html {
+
+    html {
         font-size: 12px;
     }
 
@@ -276,7 +306,7 @@ html {
         font-size: 16px;
         text-align: center;
     }
-    
+
     /* VIDEO */
 
     .video_play {
@@ -292,11 +322,11 @@ html {
         width: auto;
         aspect-ratio: 16 / 9;
     }
-   
+
     /* Pro Tipps */
 
     .video_tipps_textbox img {
-       
+
         top: -50px;
         left: -30px;
     }
@@ -304,7 +334,7 @@ html {
 
 @media screen and (min-width: 480px) and (max-width: 768px) {
 
-html {
+    html {
         font-size: 10px;
     }
 
@@ -369,7 +399,7 @@ html {
         aspect-ratio: 16 / 9;
     }
 
-     /* Pro Tipps */
+    /* Pro Tipps */
 
     .video_tipps_textbox img {
         height: auto;
@@ -461,8 +491,8 @@ html {
 }
 
 @media screen and (min-width: 1440px) {
-  .video_main {
-    padding: 80px max(120px, calc(50% - 720px));
-  }
+    .video_main {
+        padding: 80px max(120px, calc(50% - 720px));
+    }
 
 }
