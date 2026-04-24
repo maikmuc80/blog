@@ -127,7 +127,7 @@ h2 {
   font-weight: 400;
   font-size: 1rem;
   color: var(--font-color-gray);
-  text-align: center;
+  text-align: left;
   line-height: 120%;
 }
 
