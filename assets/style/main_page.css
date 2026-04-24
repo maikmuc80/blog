@@ -118,7 +118,6 @@ h3 {
   animation: fadein 1s forwards 5s;
 }
 .bild_gelb_4 {
-  
   z-index: 1;
   transform: translateY(-30px);
 }
@@ -471,3 +470,86 @@ button:active {
     padding: 60px max(120px, calc(50% - 720px));
   }
 }
+
+@media screen and (min-width: 1100px) and (max-width: 1254px) {
+    @keyframes shiftLeftText {
+      from { transform: translate(-50%, -50%); }
+      to { transform: translate(-155%, -50%); } 
+  }
+}
+
+@media screen and (min-width: 930px) and (max-width: 1099px) {
+    @keyframes shiftLeftText {
+      from { transform: translate(-50%, -50%); }
+      to { transform: translate(-130%, -50%); } 
+  }
+}
+
+@media screen and (min-width: 790px) and (max-width: 929px) {
+    @keyframes shiftLeftText {
+      from { transform: translate(-50%, -50%); }
+      to { transform: translate(-110%, -50%); } 
+  }
+}
+
+@media screen and (min-width: 610px) and (max-width: 789px) {
+    @keyframes shiftLeftText {
+      from { transform: translate(-50%, -50%); }
+      to { transform: translate(-80%, -80%); } 
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 609px) {
+  .bild_gelb_2 {
+    display: none;
+  }
+  .bild_gelb_3 {
+    position: absolute;
+    top: -25px;
+    left: -150px;
+    z-index: 4;
+    animation: fadein 1s forwards 5s;
+    width: 400px;
+  }
+  .bild_gelb_4 {
+    z-index: 1;
+    transform: translateY(-30px);
+    transform: translateX(-650px);
+  }
+  .landing_page_text{
+    display: none;
+  } 
+  @keyframes fadein {
+    0% {
+      transform: translateY(0px);
+      transform: translateX(0px);
+    }
+    100% {
+      transform: translateY(0px);
+      transform: translateX(0px);
+    }
+  }
+  .circle{
+    position: absolute;
+    top: 170px;
+    left: 100px;
+    animation: 
+      circle_rotation 3s cubic-bezier(0.35, 0.57, 0.41, 0.63) 1s infinite;
+    z-index: 15;
+  }
+
+
+  .moon {
+    visibility: hidden;
+    opacity: 0;
+    width: 50px;
+    position: absolute;
+    top: 226px;
+    left: 156px;
+    animation: moon 1s forwards 1s;
+    animation-duration: 5s;
+    z-index: 16;
+  }
+}
+
+
