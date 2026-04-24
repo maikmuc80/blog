@@ -1,306 +1,264 @@
 <!doctype html>
 <html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="./assets/style/standart.css" />
-    <link rel="stylesheet" href="./assets/style/fonts.css" />
-    <link rel="stylesheet" href="./assets/style/main_page.css" />
-    <link rel="stylesheet" href="./assets/style/media.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="./assets/style/header_footer.css" />
-    <link rel="stylesheet" href="./assets/style/highlights.css" />
+  <link rel="stylesheet" href="./assets/style/standart.css" />
+  <link rel="stylesheet" href="./assets/style/fonts.css" />
+  <link rel="stylesheet" href="./assets/style/main_page.css" />
+  <link rel="stylesheet" href="./assets/style/media.css" />
 
-    <title>Blog</title>
-    <link rel="icon" type="image/x-icon" href="./assets/icons/logo 03 1.png" />
-  </head>
+  <link rel="stylesheet" href="./assets/style/header_footer.css" />
+  <link rel="stylesheet" href="./assets/style/highlights.css" />
 
-  <body>
-    <header class="header_content">
-      <nav class="nav_bar">
-        <a href="index.html"><img src="./assets/icons/logo 03 1.png" alt="Travelblog_logo" /></a>
-        <div class="nav_bar_link">
-            <div class="nav_bar_link_container"><a href="#highlights">Highlights</a></div>
-            <img src="./assets/icons/hover.svg" alt="">
+  <title>Blog</title>
+  <link rel="icon" type="image/x-icon" href="./assets/icons/logo 03 1.png" />
+</head>
+
+<body>
+  <header class="header_content">
+    <nav class="nav_bar">
+      <a href="index.html"><img src="./assets/icons/logo 03 1.png" alt="Travelblog_logo" /></a>
+      <div class="nav_bar_link_container"><a href="#highlights">Highlights</a></div>
+      <div class="nav_bar_link_container"><a href="#faq">FAQ</a></div>
+      <div class="nav_bar_link_container"><a href="#contact">Contact</a></div>
+    </nav>
+  </header>
+  <section class="header_pic">
+    <div class="header_pic_wrapper">
+
+      <img src="./assets/img/landing_background_2.png" alt="" class="bild_gelb_2">
+      <img src="./assets/img/landing_background_3.png" alt="" class="bild_gelb_3">
+      <img src="./assets/img/header_photo.png" alt="image_of_a_couple" class="bild_gelb_4">
+      <article class="landing_page_text">
+        <h3>Cappadocia</h3>
+        <p>From sunrise balloons to hidden cave dwellings, every moment feels unreal in the best way.</p>
+      </article>
+      <img src="./assets/img/turky_circle_2.png" alt="" class="circle">
+      <img src="./assets/img/turky_moon.png" alt="" class="moon">
+
+    </div>
+  </section>
+
+
+  <main class="main_content">
+    <section id="highlights" class="highlights">
+      <div class="headline_highlights">
+        <div class="headline_highlights_h2">
+          <img src="./assets/icons/rocket_launch.svg" alt="Icon Rocket" />
+          <h2>Highlights</h2>
         </div>
-        
-        <div class="nav_bar_link_container"><a href="#faq">FAQ</a></div>
-        <div class="nav_bar_link_container"><a href="#contact">Contact</a></div>
-      </nav>
-    </header>
-    <section class="header_pic">
-            <div class="header_pic_wrapper">
-                
-                <img src="./assets/img/landing_background_2.png" alt="" class="bild_gelb_2">
-                <img src="./assets/img/landing_background_3.png" alt="" class="bild_gelb_3">
-                <img src="./assets/img/header_photo.png" alt="image_of_a_couple" class="bild_gelb_4">
-                <article class="landing_page_text">
-                    <h3>Cappadocia</h3>
-                    <p>From sunrise balloons to hidden cave dwellings, every moment feels unreal in the best way.</p>
-                </article>
-                <img src="./assets/img/turky_circle_2.png" alt="" class="circle">
-                <img src="./assets/img/turky_moon.png" alt="" class="moon">
-                
+        <div class="subheadline">
+          <p>
+            From the vibrant cultures of Asia to the sun-drenched islands of
+            the Caribbean and the serene landscapes of Scandinavia, each
+            destination offers a distinct way to explore the world.
+          </p>
+        </div>
+
+        <div class="slider">
+          <input type="radio" name="foto" id="img1" checked />
+          <input type="radio" name="foto" id="img2" />
+          <input type="radio" name="foto" id="img3" />
+          <input type="radio" name="foto" id="img4" />
+
+          <div class="bilder-ebene">
+            <img src="/assets/img/beach.jpg" class="pic1" alt="Beach with boats" />
+            <img src="/assets/img/copenhagen.jpg" class="pic2" alt="cityview copenhagen" />
+            <img src="/assets/img/pattaya.jpg" class="pic3" alt="citybirdview pattaya" />
+            <img src="/assets/img/mountain.jpg" class="pic4" alt="picture from mountain" />
+          </div>
+
+          <div class="slider_description">
+            <div class="slider_description_item" id="desc1">
+              <h3>The World’s Most Breathtaking Beaches</h3>
+              <a href="">
+                From powder-soft white sands to dramatic coastlines kissed by
+                turquoise waves, these beaches are more than destinations —
+                they’re feelings.
+              </a>
             </div>
+            <div class="slider_description_item" id="desc2">
+              <h3>Copenhagen in 3 Days: Big Experiences, Smart Spending</h3>
+              <a href="video.html">
+                Discover Copenhagen, where historic charm meets modern design,
+                vibrant cycling culture and waterfront living.
+              </a>
+            </div>
+            <div class="slider_description_item" id="desc3">
+              <h3>Pattaya Pulse: Food, Sun and Neon Nights</h3>
+              <a href="graph.html">
+                From bustling promenades to nearby islands, the city offers an
+                energetic and diverse escape. Discover Pattaya City, with
+                vibrant nightlife and rich cultural landmarks.
+              </a>
+            </div>
+            <div class="slider_description_item" id="desc4">
+              <h3>Mountain Fuji</h3>
+              <a href="">
+                The most iconic mountain and an active volcano located about
+                100 kilometers southwest of Tokyo. Written with the characters
+                for “wealth” and “samurai,” Fuji’s name evokes a sense of
+                strength, honor, and enduring prestige.
+              </a>
+            </div>
+          </div>
+
+          <div class="controls">
+            <label for="img1"></label>
+            <label for="img2"></label>
+            <label for="img3"></label>
+            <label for="img4"></label>
+          </div>
+        </div>
+      </div>
     </section>
-    
-
-    <main class="main_content">
-      <section id="highlights" class="highlights">
-        <div class="headline_highlights">
-          <div class="headline_highlights_h2">
-            <img src="./assets/icons/rocket_launch.svg" alt="Icon Rocket" />
-            <h2>Highlights</h2>
-          </div>
-          <div class="subheadline">
-            <p>
-              From the vibrant cultures of Asia to the sun-drenched islands of
-              the Caribbean and the serene landscapes of Scandinavia, each
-              destination offers a distinct way to explore the world.
-            </p>
-          </div>
-
-          <div class="slider">
-            <input type="radio" name="foto" id="img1" checked />
-            <input type="radio" name="foto" id="img2" />
-            <input type="radio" name="foto" id="img3" />
-            <input type="radio" name="foto" id="img4" />
-
-            <div class="bilder-ebene">
-              <img
-                src="/assets/img/beach.jpg"
-                class="pic1"
-                alt="Beach with boats"
-              />
-              <img
-                src="/assets/img/copenhagen.jpg"
-                class="pic2"
-                alt="cityview copenhagen"
-              />
-              <img
-                src="/assets/img/pattaya.jpg"
-                class="pic3"
-                alt="citybirdview pattaya"
-              />
-              <img
-                src="/assets/img/mountain.jpg"
-                class="pic4"
-                alt="picture from mountain"
-              />
-            </div>
-
-            <div class="slider_description">
-              <div class="slider_description_item" id="desc1">
-                <h3>The World’s Most Breathtaking Beaches</h3>
-                <a href="">
-                  From powder-soft white sands to dramatic coastlines kissed by
-                  turquoise waves, these beaches are more than destinations —
-                  they’re feelings.
-                </a>
-              </div>
-              <div class="slider_description_item" id="desc2">
-                <h3>Copenhagen in 3 Days: Big Experiences, Smart Spending</h3>
-                <a href="video.html">
-                  Discover Copenhagen, where historic charm meets modern design,
-                  vibrant cycling culture and waterfront living.
-                </a>
-              </div>
-              <div class="slider_description_item" id="desc3">
-                <h3>Pattaya Pulse: Food, Sun and Neon Nights</h3>
-                <a href="graph.html">
-                  From bustling promenades to nearby islands, the city offers an
-                  energetic and diverse escape. Discover Pattaya City, with
-                  vibrant nightlife and rich cultural landmarks.
-                </a>
-              </div>
-              <div class="slider_description_item" id="desc4">
-                <h3>Mountain Fuji</h3>
-                <a href="">
-                  The most iconic mountain and an active volcano located about
-                  100 kilometers southwest of Tokyo. Written with the characters
-                  for “wealth” and “samurai,” Fuji’s name evokes a sense of
-                  strength, honor, and enduring prestige.
-                </a>
-              </div>
-            </div>
-
-            <div class="controls">
-              <label for="img1"></label>
-              <label for="img2"></label>
-              <label for="img3"></label>
-              <label for="img4"></label>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="faq" class="faq">
-        <div class="faq_heading">
-          <img src="./assets/icons/live_help.svg" alt="Icon Person" />
-          <h2>FAQ</h2>
-        </div>
-
-        <div class="faq_wrapper">
-          <details class="faq_box">
-            <summary>
-              <p>What's the story behind my travel blog?</p>
-              <img
-                src="./assets/icons/arrow_forward_ios.svg"
-                alt="arrow_icon"
-              />
-            </summary>
-
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam
-              totam consequatur, unde quam commodi quia eligendi similique
-              soluta, repellendus neque maiores rerum, incidunt quod numquam.
-              Adipisci dolorem eos possimus autem!
-            </p>
-          </details>
-
-          <details class="faq_box">
-            <summary>
-              <p>How do I plan, document, and share my travels?</p>
-              <img
-                src="./assets/icons/arrow_forward_ios.svg"
-                alt="arrow_icon"
-              />
-            </summary>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores
-              ab alias voluptatem sit, optio eum culpa itaque? Vitae voluptate
-              totam facilis laborum officiis tempora, pariatur ipsum ipsa?
-              Doloremque, ipsum voluptatibus?
-            </p>
-          </details>
-
-          <details class="faq_box">
-            <summary>
-              <p>
-                How can brands, companies, or fellow creators collaborate with
-                me or get in touch?
-              </p>
-              <img
-                src="./assets/icons/arrow_forward_ios.svg"
-                alt="arrow_icon"
-              />
-            </summary>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-              dignissimos tempora doloribus quidem quo, incidunt enim saepe
-              corrupti error eum voluptate consequuntur officiis adipisci culpa
-              minima inventore aliquam at temporibus.
-            </p>
-          </details>
-
-          <details class="faq_box">
-            <summary>
-              <p>How can readers support this blog and the work behind it?</p>
-              <img
-                src="./assets/icons/arrow_forward_ios.svg"
-                alt="arrow_icon"
-              />
-            </summary>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Asperiores ipsam aliquam aut eaque expedita eos pariatur quam?
-              Labore nemo minus neque aliquid? Aliquam, quisquam inventore
-              officiis temporibus veritatis totam odio.
-            </p>
-          </details>
-        </div>
-      </section>
-      <section id="contact" class="contact_form">
-        <div>
-          <div class="heading_contact">
-            <img src="./assets/icons/person_pin.svg" alt="contact pin" />
-            <p>Contact form</p>
-          </div>
-          <article class="info">
-            <p>Have a question or an idea to collaborate?</p>
-            <p>
-              Get in touch—I'd love to hear from you and explore how we can work
-              together.
-            </p>
-          </article>
-        </div>
-        <form action="/action_page.php" class="contact_form_inputs">
-          <div class="input">
-            <div class="input_form">
-              <label for="name">What's your name?</label>
-              <textarea name="name" id="name"></textarea>
-            </div>
-
-            <div class="input_form">
-              <label for="mail">What's your email?</label>
-              <textarea name="mail" id="mail"></textarea>
-            </div>
-          </div>
-
-          <label for="text">How can I help?</label>
-          <textarea name="text" id="text"></textarea>
-
-          <svg url="/assets/icons/check.svg" style="display: none">
-            <symbol id="checkmark" viewBox="0 0 24 24">
-              <path
-                stroke-linecap="round"
-                stroke-miterlimit="10"
-                fill="none"
-                d="M22.9 3.7l-15.2 16.6-6.6-7.1"
-              ></path>
-            </symbol>
-          </svg>
-
-          <div class="container">
-            <input type="checkbox" id="checkbox" unchecked required/>
-            <label for="checkbox"
-              >I've read the <a href="privacypolicy.html">privacy policy</a> and agree to the processing
-              of my data as outlined.</label
-            >
-            <p class="error">Please accept the privacy policy.</p>
-          </div>
-          <div class="btn">
-            <button type="submit" formtarget="_blank">Send</button>
-          </div>
-        </form>
-      </section>
-    </main>
-
-    <footer class="footer_content">
-      <div class="footer_imprint">
-        <img src="./assets/icons/copyright.svg" alt="copyright_icon" />
-        <div class="footer_imprint_text">
-          <p>Travel Blog 2026</p>
-          <a href="imprint.html">Imprint</a>
-          <a href="">Cookie Preferences</a>
-        </div>
+    <section id="faq" class="faq">
+      <div class="faq_heading">
+        <img src="./assets/icons/live_help.svg" alt="Icon Person" />
+        <h2>FAQ</h2>
       </div>
 
-      <div class="footer_socialmedia">
-        <a href="https://www.tiktok.com/de-DE/" target="blank"
-          ><img src="./assets/icons/Tiktok_icon 1.png" alt="tiktok_icon"
-        /></a>
-        <a href="https://www.youtube.com/" target="blank"
-          ><img src="./assets/icons/youtube.png" alt="youtube_icon"
-        /></a>
-        <a href="https://www.facebook.com/" target="blank"
-          ><img src="./assets/icons/facebook.png" alt="facebook_icon"
-        /></a>
-        <a href="https://www.instagram.com/" target="blank"
-          ><img
-            src="./assets/icons/Instagram_logo_2016 1.png"
-            alt="instagram_icon"
-        /></a>
-      </div>
+      <div class="faq_wrapper">
+        <details class="faq_box">
+          <summary>
+            <p>What's the story behind my travel blog?</p>
+            <img src="./assets/icons/arrow_forward_ios.svg" alt="arrow_icon" />
+          </summary>
 
-  
-    </footer>
-     <div class="footer_responsive">
-        <a href="index.html"><img src="./assets/icons/Home.svg" alt="home_icon"></a>
-        <a href="#highlights"><img src="./assets/icons/rocket_green.svg" alt="rocket_icon"></a>
-        <a href="#fag"><img src="./assets/icons/live_help_green.svg" alt="question_icon"></a>
-        <a href="#contact"><img src="./assets/icons/person_pin_green.svg" alt="person_icon"></a>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam
+            totam consequatur, unde quam commodi quia eligendi similique
+            soluta, repellendus neque maiores rerum, incidunt quod numquam.
+            Adipisci dolorem eos possimus autem!
+          </p>
+        </details>
 
+        <details class="faq_box">
+          <summary>
+            <p>How do I plan, document, and share my travels?</p>
+            <img src="./assets/icons/arrow_forward_ios.svg" alt="arrow_icon" />
+          </summary>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores
+            ab alias voluptatem sit, optio eum culpa itaque? Vitae voluptate
+            totam facilis laborum officiis tempora, pariatur ipsum ipsa?
+            Doloremque, ipsum voluptatibus?
+          </p>
+        </details>
+
+        <details class="faq_box">
+          <summary>
+            <p>
+              How can brands, companies, or fellow creators collaborate with
+              me or get in touch?
+            </p>
+            <img src="./assets/icons/arrow_forward_ios.svg" alt="arrow_icon" />
+          </summary>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+            dignissimos tempora doloribus quidem quo, incidunt enim saepe
+            corrupti error eum voluptate consequuntur officiis adipisci culpa
+            minima inventore aliquam at temporibus.
+          </p>
+        </details>
+
+        <details class="faq_box">
+          <summary>
+            <p>How can readers support this blog and the work behind it?</p>
+            <img src="./assets/icons/arrow_forward_ios.svg" alt="arrow_icon" />
+          </summary>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Asperiores ipsam aliquam aut eaque expedita eos pariatur quam?
+            Labore nemo minus neque aliquid? Aliquam, quisquam inventore
+            officiis temporibus veritatis totam odio.
+          </p>
+        </details>
       </div>
-  </body>
+    </section>
+    <section id="contact" class="contact_form">
+      <div>
+        <div class="heading_contact">
+          <img src="./assets/icons/person_pin.svg" alt="contact pin" />
+          <p>Contact form</p>
+        </div>
+        <article class="info">
+          <p>Have a question or an idea to collaborate?</p>
+          <p>
+            Get in touch—I'd love to hear from you and explore how we can work
+            together.
+          </p>
+        </article>
+      </div>
+      <form action="/action_page.php" class="contact_form_inputs">
+        <div class="input">
+          <div class="input_form">
+            <label for="name">What's your name?</label>
+            <textarea name="name" id="name"></textarea>
+          </div>
+
+          <div class="input_form">
+            <label for="mail">What's your email?</label>
+            <textarea name="mail" id="mail"></textarea>
+          </div>
+        </div>
+
+        <label for="text">How can I help?</label>
+        <textarea name="text" id="text"></textarea>
+
+        <svg url="/assets/icons/check.svg" style="display: none">
+          <symbol id="checkmark" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-miterlimit="10" fill="none" d="M22.9 3.7l-15.2 16.6-6.6-7.1"></path>
+          </symbol>
+        </svg>
+
+        <div class="container">
+          <input type="checkbox" id="checkbox" unchecked required />
+          <label for="checkbox">I've read the <a href="privacypolicy.html">privacy policy</a> and agree to the
+            processing
+            of my data as outlined.</label>
+          <p class="error">Please accept the privacy policy.</p>
+        </div>
+        <div class="btn">
+          <button type="submit" formtarget="_blank">Send</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer_content">
+
+    <div class="footer_imprint">
+      <img src="./assets/icons/copyright.svg" alt="copyright_icon" />
+      <div class="footer_imprint_text">
+        <p>Travel Blog 2026</p>
+        <a href="imprint.html">Imprint</a>
+        <a href="">Cookie Preferences</a>
+      </div>
+    </div>
+
+    <div class="footer_socialmedia">
+      <a href="https://www.tiktok.com/de-DE/" target="blank"><img src="./assets/icons/Tiktok_icon 1.png"
+          alt="tiktok_icon" /></a>
+      <a href="https://www.youtube.com/" target="blank"><img src="./assets/icons/youtube.png" alt="youtube_icon" /></a>
+      <a href="https://www.facebook.com/" target="blank"><img src="./assets/icons/facebook.png"
+          alt="facebook_icon" /></a>
+      <a href="https://www.instagram.com/" target="blank"><img src="./assets/icons/Instagram_logo_2016 1.png"
+          alt="instagram_icon" /></a>
+    </div>
+
+
+  </footer>
+  <div class="footer_responsive">
+    <a href="index.html"><img src="./assets/icons/Home.svg" alt="home_icon"></a>
+    <a href="#highlights"><img src="./assets/icons/rocket_green.svg" alt="rocket_icon"></a>
+    <a href="#fag"><img src="./assets/icons/live_help_green.svg" alt="question_icon"></a>
+    <a href="#contact"><img src="./assets/icons/person_pin_green.svg" alt="person_icon"></a>
+
+  </div>
+</body>
+
 </html>

@@ -12,23 +12,8 @@ header {
     gap: 100px;
 }
 
-.nav_bar_link {
-    position: relative;
-}
 
-.nav_bar_link img {
-    position: absolute;
-    top: 50%;
-    left: -5%;
-    display: none;
-}
-
-/* .nav_bar_link img:hover {
-    display: unset;
-} */
-
-
-.nav_bar a {
+.nav_bar_link_container a {
     width: 100%;
     font-family: 'Arima';
     font-size: 1.5rem;
@@ -88,34 +73,48 @@ footer {
     gap: 16px;
 }
 
-.footer_responsive{
+.footer_responsive {
     display: none;
 }
 
 
 
-@media screen and (min-width: 780px) and (max-width: 1280px) {}
+@media screen and (min-width: 1001px) and (max-width: 1280px) {}
 
-@media screen and (min-width: 480px) and (max-width: 779px) {}
+@media screen and (min-width: 780px) and (max-width: 1000px) {
+    .footer_imprint_text {
+        gap: 36px;
+    }
 
-@media screen and (max-width: 479px) {
+    .footer_content {
+        padding: 30px 60px;
+    }
+
+}
+
+@media screen and (min-width: 480px) and (max-width: 779px) {
+
+    .header_content {
+        padding: 24px 30px;
+        justify-content: center;
+        align-items: center;
+    }
+
 
     .nav_bar_link_container {
         display: none;
-    
     }
 
 
     .footer_imprint_text {
         flex-direction: column-reverse;
         gap: 8px;
-
     }
 
     .footer_imprint {
         display: flex;
         justify-content: flex-start;
-        align-items:flex-end;
+        align-items: flex-end;
     }
 
     .footer_content {
@@ -123,9 +122,49 @@ footer {
         align-items: flex-end;
     }
 
-    .footer_responsive{
+    .footer_responsive {
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        background-color: var(--secondary-yellow-color);
+        padding: 24px 30px;
+    }
+}
+
+@media screen and (max-width: 478px) {
+
+    .header_content {
+        padding: 24px 30px;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .nav_bar_link_container {
+        display: none;
+    }
+
+
+    .footer_imprint_text {
+        flex-direction: column-reverse;
+        gap: 8px;
+    }
+
+    .footer_imprint {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+
+    .footer_content {
+        padding: 24px 30px;
+        align-items: flex-end;
+    }
+
+    .footer_responsive {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         background-color: var(--secondary-yellow-color);
         padding: 24px 30px;
     }
