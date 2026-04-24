@@ -30,9 +30,17 @@
   .diagram_top {
     flex-wrap: wrap;
   }
+
+  .author {
+    max-width: 300px;
+  }
 }
 
 @media screen and (min-width: 480px) and (max-width: 779px) {
+  .nav_bar_link_container {
+    display: none;
+  }
+
   .headline {
     padding: 80px 35px 40px;
   }
@@ -72,8 +80,7 @@
   }
 
   .author {
-    width: 345px;
-    height: 330px;
+    max-width: 300px;
   }
 
   .rain {
@@ -153,6 +160,10 @@
 }
 
 @media screen and (max-width: 479px) {
+  .nav_bar_link_container {
+    display: none;
+  }
+
   .headline {
     padding: 80px 20px 40px;
   }
