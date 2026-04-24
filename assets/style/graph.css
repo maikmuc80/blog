@@ -279,14 +279,27 @@ h2 {
 }
 
 .btn_inactive {
-  display: flex;
-  
+  display: block;
+position: absolute;
+  z-index: 0;
+  transform: translateX(150px);
+}
+
+.btn_inactive:active {
+  /* https://smoothshadows.com/#djEsMSw1LDAuMyw0LDQsMCwjNGVhNDg3LCNmM2Y0ZjYsI2ZmZmZmZiwy */
+  box-shadow:
+    0px 0px 0px rgba(78, 164, 135, 0.06),
+    0px 1px 1px rgba(78, 164, 135, 0.12),
+    0px 1px 1px rgba(78, 164, 135, 0.18),
+    0px 3px 3px rgba(78, 164, 135, 0.24),
+    0px 4px 4px rgba(78, 164, 135, 0.3);
 }
 
 .pre_btn {
   transform: translateY(45px);
   width: 160px;
   height: 50px;
+  opacity: 1;
 
   font-family: "Arima";
   font-weight: 700;
@@ -299,21 +312,52 @@ h2 {
   border-radius: 40px;
   border: none;
   cursor: pointer;
-  
+}
+
+.btn_inactive:active ~ #show {
+  animation: 250ms ease-out forwards fade-in;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    display: none;
+    translate: 0 0;
+  }
+  to {
+    opacity: 1;
+    display: block;
+    translate: -250px 0;
+  }
+}
+
+.btn_inactive:active {
+  animation: 250ms ease-out forwards fade-out;
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+    display: block;
+    translate: 0 0;
+  }
+  to {
+    opacity: 0;
+    display: none;
+    translate: -150px 0;
+  }
 }
 
 .pre_btn img {
-    transform: translateY(5px) translateX(-10px);
-
+  transform: translateY(5px) translateX(-10px);
 }
 
-.pre_btn::after {
-    display: nne;
-}
-
-.btn_active {
+#show {
   display: flex;
-  display: none;
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  transform: translateX(350px);
 }
 
 .btn_share {
@@ -331,20 +375,19 @@ h2 {
   background-color: var(--primary-green-color);
   border-radius: 40px;
   border: none;
-  
 }
 
 .button_collapse {
   display: flex;
   justify-content: space-between;
   gap: 10px;
-  
 }
 
 .button_collapse img {
   width: 24px;
   height: 27px;
   align-self: flex-end;
+  transform: translateY(30px);
 }
 
 .share_links {
@@ -352,6 +395,7 @@ h2 {
   flex-direction: column;
   justify-content: flex-end;
   gap: 10px;
+  transform: translateY(45px);
 }
 
 .share_links a {
