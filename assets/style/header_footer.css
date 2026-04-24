@@ -78,7 +78,12 @@ footer {
 
 .footer_responsive {
     display: none;
+    position:sticky;
+    width: 100%;
+    bottom:0;
 }
+
+
 
 
 
@@ -161,7 +166,7 @@ footer {
     }
 
     .footer_content {
-        padding: 30px 24px;
+    padding: 30px 24px;
         align-items: flex-end;
     }
 
