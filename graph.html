@@ -18,7 +18,9 @@
   <body>
     <header class="header_content">
       <nav class="nav_bar">
-        <a href="index.html"><img src="./assets/icons/logo 03 1.png" alt="Travelblog_logo" /></a>
+        <a href="index.html"
+          ><img src="./assets/icons/logo 03 1.png" alt="Travelblog_logo"
+        /></a>
         <div class="nav_bar_link">
           <div class="nav_bar_link_container">
             <a href="#highlights">Highlights</a>
@@ -167,15 +169,20 @@
             Follow me for more content like this, and <br />
             share the article with your friends!
           </p>
-          <div class="share_info">
+          <div class="share_info" id="show-hide">
             <img src="assets/icons/arrow.svg" alt="share arrow" />
-            <div class="btn_inactive">
-              <button type="button" class="pre_btn"><img src="assets/icons/share_yellow.svg" alt="yellow_share_icon">Share</button>
+            <div class="btn_inactive" id="hide" checked >
+              <button type="button" class="pre_btn" value="off" active>
+                <img
+                  src="assets/icons/share_yellow.svg"
+                  alt="yellow_share_icon"
+                />Share
+              </button>
             </div>
-            <div class="btn_active">
+            <div class="btn_active" id="show">
               <!-- <img src="assets/icons/arrow.svg" alt="share arrow" /> -->
               <div class="button_collapse">
-                <button type="" class="btn_share">Share</button>
+                <button type="" class="btn_share" value="on">Share</button>
                 <img src="assets/icons/share.svg" alt="share icon" />
                 <div class="share_links">
                   <a href="https://www.linkedin.de">LinkedIn</a>
