@@ -1,3 +1,15 @@
+@media screen and (min-width: 1440px) {
+
+  .diagram {
+    padding: 40px max(20px, calc(50% - 720px));
+  }
+
+  .rain {
+    padding: 40px max(20px, calc(50% - 720px));
+  }
+  
+}
+
 @media screen and (min-width: 1281px) and (max-width: 1439px) {
   .diagram {
     padding: 40px 80px;
@@ -277,3 +289,5 @@
     width: 100px;
   }
 }
+
+
