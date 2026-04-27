@@ -219,6 +219,10 @@ details[open] img {
   border-radius: 5px;
 }
 
+summary>p{
+  padding: 0px 10px ;
+}
+
 
 .contact_form {
   display: flex;
