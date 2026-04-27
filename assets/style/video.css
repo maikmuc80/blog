@@ -76,7 +76,6 @@
     justify-content: center;
     height: 120px;
     width: 120px;
-
 }
 
 .video_heading_about h3 {
@@ -109,7 +108,6 @@
 .video_video {
     display: flex;
     flex-direction: column;
-
     padding-top: 80px;
 }
 
@@ -134,10 +132,6 @@
     width: auto;
     aspect-ratio: 16 / 9;
 }
-
-/* .video_writing{
-    padding-bottom: 100px;
-} */
 
 .video_writing p {
     font-family: 'Palanquin';
@@ -175,7 +169,6 @@
     align-items: center;
     position: relative;
     padding: 50px 0px;
-
 }
 
 .video_tipps_textbox img {
@@ -253,15 +246,15 @@
 
 
 
-
-
-
 @media screen and (min-width: 769px) and (max-width: 1280px) {
 
     html {
         font-size: 12px;
     }
 
+    .video_writing {
+        padding: 60px 0px;
+    }
 
     .video_main {
         padding: 80px 120px;
@@ -307,8 +300,6 @@
         text-align: center;
     }
 
-    /* VIDEO */
-
     .video_play {
         display: flex;
         justify-content: center;
@@ -323,10 +314,7 @@
         aspect-ratio: 16 / 9;
     }
 
-    /* Pro Tipps */
-
     .video_tipps_textbox img {
-
         top: -50px;
         left: -30px;
     }
@@ -338,6 +326,9 @@
         font-size: 10px;
     }
 
+    .video_writing {
+        padding: 40px 0px;
+    }
 
     .video_main {
         padding: 70px 30px;
@@ -383,8 +374,6 @@
         text-align: center;
     }
 
-    /* VIDEO */
-
     .video_play {
         display: flex;
         justify-content: center;
@@ -399,15 +388,12 @@
         aspect-ratio: 16 / 9;
     }
 
-    /* Pro Tipps */
-
     .video_tipps_textbox img {
         height: auto;
         width: 150px;
         top: -30px;
         left: -10px;
     }
-
 
     .video_share_info>img {
         width: 60px;
@@ -419,9 +405,6 @@
     .video_share_info>a {
         padding-top: 5px;
     }
-
-
-
 }
 
 @media screen and (max-width: 479px) {
@@ -430,6 +413,13 @@
         font-size: 8px;
     }
 
+    .video_video {
+        padding-top: 30px;
+    }
+
+    .video_writing {
+        padding: 20px 0px;
+    }
 
     .video_main {
         padding: 70px 15px;
@@ -459,7 +449,7 @@
     }
 
     .video_heading_about {
-        max-width: 300px;
+        max-width: 400px;
     }
 
     .video_heading_about h3 {
@@ -475,13 +465,11 @@
         text-align: center;
     }
 
-    /* VIDEO */
-
     .video_play {
         display: flex;
         justify-content: center;
         width: 100%;
-        padding-top: 40px;
+        padding-top: 20px;
     }
 
     .video_play iframe {
@@ -490,8 +478,6 @@
         width: auto;
         aspect-ratio: 16 / 9;
     }
-
-    /* Pro Tipps */
 
     .video_tipps_textbox img {
         height: auto;
@@ -514,10 +500,6 @@
     .video_share_info>a>img {
         width: 100px;
     }
-
-
-
-
 }
 
 @media screen and (min-width: 1440px) {
