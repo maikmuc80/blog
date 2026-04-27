@@ -96,6 +96,17 @@ footer {
   width: 100%;
   bottom: 0;
   display: none;
+  z-index: 1;
+}
+
+@media screen and (min-width: 1440px) {
+  .header_content {
+    padding: 32px max(120px, calc(50% - 720px));
+  }
+
+  .footer_content {
+    padding: 60px max(120px, calc(50% - 720px));
+  }
 }
 
 @media screen and (min-width: 1001px) and (max-width: 1280px) {
