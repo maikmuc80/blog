@@ -255,38 +255,38 @@ h2 {
 }
 
 .video_share {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 70px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 70px;
 }
 
 .video_share p {
-    font-family: 'Arima';
-    font-weight: 500;
-    line-height: 120%;
-    font-size: 1.5rem;
-    color: var(--font-color-gray);
-    text-align: center;
-    padding: 30px 0px;
+  font-family: "Arima";
+  font-weight: 500;
+  line-height: 120%;
+  font-size: 1.5rem;
+  color: var(--font-color-gray);
+  text-align: center;
+  padding: 30px 0px;
 }
 
 .video_share_info {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    gap: 16px;
-    position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 16px;
+  position: relative;
 }
 
-.video_share_info>img {
-    width: 80px;
-    position: absolute;
-    top: -40px;
-    left: -10px;
+.video_share_info > img {
+  width: 80px;
+  position: absolute;
+  top: -40px;
+  left: -10px;
 }
 
-.video_share_info>a {
-    padding-top: 20px;
+.video_share_info > a {
+  padding-top: 20px;
 }
 
 @media screen and (min-width: 1440px) {
