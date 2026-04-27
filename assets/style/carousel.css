@@ -1,10 +1,27 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: max(120px, calc((100% - 1440px) / 2));
+    padding-right: max(120px, calc((100% - 1440px) / 2));
+    padding-bottom: 88px;
+}
+
+h2 {
+    font-family: 'Arima';
+    font-weight: 600;
+    font-size: 32px;
+    color: var(--font-color-gray);
+}
+
 .subscription {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 1440px;
     padding: 80px 0;
+    gap: 20px;
 }
 
 .subscription h1 {
@@ -43,7 +60,7 @@
 }
 
 .text_carousel {
-    width: 70%;
+    width: 80%;
 }
 .carousel_underline {
     display: flex;
@@ -69,7 +86,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 30%;
+    width: 20%;
     padding: 12px;
 
     background-color: rgba(78, 164, 135, 0.2);
@@ -97,14 +114,29 @@
 }
 
 /* Carousel */
+.section_carousel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section_carousel p{
+    font-family: 'Palanquin';
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 120%;
+    color: var(--font-color-brown);
+    padding: 20px 0px;
+}
 
 .carousel {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: -30px;
 
-    height: 100vh;
+    height: 50vh;
 }
 .slider_b{
     height: 300px;
@@ -115,8 +147,8 @@
 
 .slider_b_element{
     z-index: 1;
-    width: 300px;
-    height: 440px;
+    width: 250px;
+    height: 366px;
     border-radius: 16px;
     
 
@@ -145,7 +177,36 @@
 }
 
 .slider_b_element img {
-    width: 300px;
-    height: 440px;
+    width: 250px;
+    height: 366px;
     border-radius: 16px;
+}
+
+.list {
+    padding: 88px 80px;
+}
+.list p {
+    font-family: 'Palanquin';
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 120%;
+    color: var(--font-color-brown);
+    padding: 20px 0px;
+}
+
+.list li {
+    font-family: 'Palanquin';
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 120%;
+    color: var(--font-color-brown);
+    padding-left: 8px;
+}
+.end p{
+    font-family: 'Palanquin';
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 120%;
+    color: var(--font-color-brown);
+    padding: 20px 0px;
 }
