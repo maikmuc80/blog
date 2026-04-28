@@ -18,7 +18,7 @@ h2 {
 .subscription {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 20px;
 }
@@ -139,9 +139,8 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: -30px;
 
-    height: 50vh;
+    height: 30vh;
 }
 .slider {
   position: relative;
