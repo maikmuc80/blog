@@ -23,7 +23,7 @@
   color: var(--primary-green-color);
 }
 
-.video_heading_text > h2 {
+.video_heading_text > h1 {
   font-family: "Arima";
   font-weight: 700;
   font-size: 4rem;
@@ -173,7 +173,7 @@
 }
 
 .video_tipps_textbox img {
-  z-index: 2;
+  z-index: 1;
   height: auto;
   width: 190px;
   padding-top: 20px;
@@ -187,7 +187,7 @@
   max-width: 1200px;
   border-radius: 30px;
   padding: 15px;
-  z-index: 1;
+  z-index: 0;
 }
 
 .video_tipps_list li {
@@ -257,7 +257,7 @@
     align-items: center;
   }
 
-  .video_heading_text h2 {
+  .video_heading_text h1 {
     font-size: 3rem;
   }
 
@@ -411,7 +411,7 @@
     font-size: 1rem;
   }
 
-  .video_heading_text h2 {
+  .video_heading_text h1 {
     font-size: 2rem;
   }
 
@@ -543,7 +543,7 @@
     font-size: 1rem;
   }
 
-  .video_heading_text h2 {
+  .video_heading_text h1 {
     font-size: 2rem;
   }
 
