@@ -18,7 +18,7 @@ h2 {
 .subscription {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 20px;
     width: 100%;
