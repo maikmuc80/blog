@@ -2,7 +2,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    
     gap: 40px;
     padding-bottom: 88px;
     width: 100%;
@@ -18,8 +18,7 @@ h2 {
 
 .subscription {
     display: flex;
-    justify-content: space-between;
-   
+    justify-content: center;
 }
 
 .subscription h1 {
@@ -34,7 +33,6 @@ h2 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    flex-wrap: wrap;
     gap: 16px;
     width: 100%;
 }
@@ -384,25 +382,31 @@ input[type="radio"] {
   border-radius: 25px;
 }
 
-@media screen and (max-width: 1439px) {
+@media screen and (min-width: 1440px) {
+    .headline_highlights {
+        display: none;
+    }
+
+    main {
+        padding: 80px max(120px, calc(50% - 720px));
+    }
+    .subscription {
+        padding: 80px max(120px, calc(50% - 720px));
+    }
+    
+}
+
+@media screen and (min-width: 790px) and (max-width: 1439px) {
     .carousel {
         display: none;
     }
     main {
          padding: 40px max(16px, calc(50% - 720px));
     }
-}
-
-@media screen and (min-width: 1440px) {
-    .headline_highlights {
-        display: none;
+    .subscription {
+         padding: 40px max(16px, calc(50% - 720px));
     }
-    main {
-        padding: 80px max(120px, calc(50% - 720px));
-    }
-}
 
-@media screen and (min-width: 790px) and (max-width: 1216px) {
     .slider_description {
         width: 440px;
         height: 229px;
@@ -411,6 +415,10 @@ input[type="radio"] {
         border-left: solid 1px rgba(255, 255, 255, 0.5);
         border-right: solid 1px rgba(255, 255, 255, 0.5);
         padding: 25px;
+    }
+    .headline_carousel {
+        justify-content: center;
+        flex-wrap: wrap;
     }
     .slider_description_item h3 {
         font-family: 'Palanquin Dark';
@@ -431,9 +439,9 @@ input[type="radio"] {
         padding-left: 16px;
         padding-right: 16px;
     }
-
-    .overline {
-
+    .carusel_author {
+        width: 100%;
+        font-size: 2.5rem;
     }
 }
 
@@ -446,6 +454,10 @@ input[type="radio"] {
         border-left: solid 1px rgba(255, 255, 255, 0.5);
         border-right: solid 1px rgba(255, 255, 255, 0.5);
         padding: 5px;
+    }
+    .headline_carousel {
+        justify-content: center;
+        flex-wrap: wrap;
     }
     .slider_description_item h3 {
         font-family: 'Palanquin Dark';
@@ -471,9 +483,7 @@ input[type="radio"] {
         padding: 40px 10px;
     }
     .carusel_author {
-        width: 222px;
-    }
-    .carusel_author {
+        width: 100%;
         font-size: 2.5rem;
     }
     .overline {
