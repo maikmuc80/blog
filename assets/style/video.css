@@ -655,13 +655,13 @@
   }
 }
 
-@media screen and (min-width: 1445px) {
+@media screen and (min-width: 1550px) {
   .video_main {
     padding: 80px max(120px, calc(50% - 720px));
   }
 
 .video_tipps_textbox img {
   top: -40px;
-  left: 60px;
+  left: 30px;
 }
 }
