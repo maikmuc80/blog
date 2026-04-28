@@ -21,6 +21,7 @@ h2 {
     justify-content: center;
     align-items: center;
     gap: 20px;
+    width: 100%;
 }
 
 .subscription h1 {
@@ -34,9 +35,10 @@ h2 {
 .headline_carousel {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     gap: 16px;
+    width: 100%;
 }
 .overline {
     font-family: 'Palanquin';
@@ -139,9 +141,8 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: -30px;
 
-    height: 50vh;
+    height: 30vh;
 }
 .slider {
   position: relative;
