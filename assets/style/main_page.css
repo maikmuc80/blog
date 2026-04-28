@@ -219,6 +219,11 @@ details[open] img {
   border-radius: 5px;
 }
 
+.faq_box img{
+  width: 24px;
+  height: 24px;
+}
+
 summary>p{
   padding: 0px 10px ;
 }

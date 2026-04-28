@@ -407,6 +407,7 @@
 }
 
 @media screen and (min-width: 430px) and (max-width: 767px) {
+
   .video_heading_text h3 {
     font-size: 1rem;
   }
@@ -662,7 +663,6 @@
   }
 
 .video_tipps_textbox img {
-
   top: -40px;
   left: 60px;
 }
