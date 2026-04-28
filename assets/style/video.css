@@ -406,7 +406,11 @@
   }
 }
 
-@media screen and (min-width: 430px) and (max-width: 767px) {
+@media screen and (min-width: 430px) and (max-width: 479px) {
+
+  .video_main {
+    padding: 70px 15px;
+  }
 
   .video_heading_text h3 {
     font-size: 1rem;
@@ -530,12 +534,6 @@
 
   .video_share p {
     font-size: clamp(0.8rem, 4vw, 1rem);
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .video_main {
-    padding: 70px 15px;
   }
 }
 
@@ -666,5 +664,4 @@
   top: -40px;
   left: 60px;
 }
-
 }
