@@ -1,5 +1,5 @@
 .imprint {
-  padding: 56px 120px;
+  padding: 56px 120px 90px;
 }
 
 .imprint h1 {
@@ -48,25 +48,25 @@ body::-webkit-scrollbar-thumb {
 
 @media screen and (min-width: 1440px) {
   .imprint {
-    padding: 56px max(120px, calc(50% - 720px));
+    padding: 56px max(120px, calc(50% - 720px)) 90px;
   }
 }
 
 @media screen and (max-width: 479px) {
   .imprint {
-    padding: 56px 15px;
+    padding: 56px 15px 130px;
   }
 }
 
 @media screen and (min-width: 480px) and (max-width: 779px) {
   .imprint {
-    padding: 56px 30px;
+    padding: 56px 30px 95px;
   }
 }
 
 @media screen and (min-width: 780px) and (max-width: 1280px) {
   .imprint {
-    padding: 56px 60px;
+    padding: 56px 60px 95px;
   }
 }
 
