@@ -179,12 +179,12 @@
   padding-top: 20px;
   position: absolute;
   top: -40px;
-  left: 70px;
+  left: -30px;
 }
 
 .video_tipps_list {
   background-color: var(--background-green);
-  max-width: 1000px;
+  max-width: 1200px;
   border-radius: 30px;
   padding: 15px;
   z-index: 1;
@@ -660,4 +660,11 @@
   .video_main {
     padding: 80px max(120px, calc(50% - 720px));
   }
+
+.video_tipps_textbox img {
+
+  top: -40px;
+  left: 60px;
+}
+
 }
