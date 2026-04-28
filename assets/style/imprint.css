@@ -1,27 +1,28 @@
-body {
-  height: 100vh;
-}
-
 .imprint {
   padding: 56px 120px;
 }
 
 .imprint h1 {
   padding: 16px;
+  font-family: "Arima";
+  font-weight: 600;
 }
 
 .imprint p {
   padding: 16px;
+  font-family: "Palanquin";
 }
 
 .imprint h2 {
   padding: 16px ;
+  font-family: "Arima";
 }
 
 body {
   --sb-track-color: #1b1103;
   --sb-thumb-color: #4ea487;
   --sb-size: 10px;
+  height: 100vh;
 }
 
 body::-webkit-scrollbar {
