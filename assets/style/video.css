@@ -336,6 +336,7 @@
   .video_heading_text h1 {
     font-size: 2.5rem;
   }
+
   .video_heading {
     flex-direction: column;
     align-items: center;
@@ -482,7 +483,7 @@
     max-width: 300px;
   }
 
-  .video_heading_about h3 {
+  /* .video_heading_about h3 {
     font-size: 16px;
   }
 
@@ -493,7 +494,7 @@
   .video_heading_about p {
     font-size: 16px;
     text-align: center;
-  }
+  } */
 
   .video_play {
     display: flex;
