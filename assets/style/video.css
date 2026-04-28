@@ -656,7 +656,7 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1445px) {
   .video_main {
     padding: 80px max(120px, calc(50% - 720px));
   }
