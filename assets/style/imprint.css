@@ -1,27 +1,28 @@
-body {
-  height: 100vh;
-}
-
 .imprint {
-  padding: 56px 120px;
+  padding: 56px 120px 90px;
 }
 
 .imprint h1 {
   padding: 16px;
+  font-family: "Arima";
+  font-weight: 600;
 }
 
 .imprint p {
   padding: 16px;
+  font-family: "Palanquin";
 }
 
 .imprint h2 {
   padding: 16px ;
+  font-family: "Arima";
 }
 
 body {
   --sb-track-color: #1b1103;
   --sb-thumb-color: #4ea487;
   --sb-size: 10px;
+  height: 100vh;
 }
 
 body::-webkit-scrollbar {
@@ -47,25 +48,25 @@ body::-webkit-scrollbar-thumb {
 
 @media screen and (min-width: 1440px) {
   .imprint {
-    padding: 56px max(120px, calc(50% - 720px));
+    padding: 56px max(120px, calc(50% - 720px)) 90px;
   }
 }
 
 @media screen and (max-width: 479px) {
   .imprint {
-    padding: 56px 15px;
+    padding: 56px 15px 130px;
   }
 }
 
 @media screen and (min-width: 480px) and (max-width: 779px) {
   .imprint {
-    padding: 56px 30px;
+    padding: 56px 30px 95px;
   }
 }
 
 @media screen and (min-width: 780px) and (max-width: 1280px) {
   .imprint {
-    padding: 56px 60px;
+    padding: 56px 60px 95px;
   }
 }
 
