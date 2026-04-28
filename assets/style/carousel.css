@@ -440,12 +440,21 @@ input[type="radio"] {
         padding-right: 16px;
     }
     .carusel_author {
-        width: 100%;
+        width: 500px;
         font-size: 2.5rem;
     }
 }
 
 @media screen and (min-width: 300px) and (max-width: 789px) {
+    .carousel {
+        display: none;
+    }
+    main {
+         padding: 40px max(16px, calc(50% - 720px));
+    }
+    .subscription {
+         padding: 40px max(16px, calc(50% - 720px));
+    }
     .slider_description {
         width: 240px;
         height: 280px;
