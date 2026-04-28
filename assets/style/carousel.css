@@ -71,6 +71,7 @@ h2 {
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-end;
+    flex-wrap: wrap;
     padding-top: 32px;
     gap: 12px;
 }
