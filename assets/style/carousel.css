@@ -5,6 +5,7 @@ main {
     justify-content: center;
     gap: 40px;
     padding-bottom: 88px;
+    width: 100%;
 }
 
 h2 {
@@ -17,11 +18,8 @@ h2 {
 
 .subscription {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    width: 100%;
+    justify-content: space-between;
+   
 }
 
 .subscription h1 {
@@ -142,7 +140,7 @@ h2 {
     justify-content: center;
     align-items: center;
 
-    height: 30vh;
+    height: 500px;
 }
 .slider {
   position: relative;
