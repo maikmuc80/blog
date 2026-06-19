@@ -1,6 +1,7 @@
 .imprint {
   padding: 56px 120px 90px;
-  height: 100vh;
+  /* height: 100vh; */
+  min-height: calc(100vh - 297px);
 }
 
 .imprint h1 {
@@ -24,6 +25,7 @@ body {
   --sb-thumb-color: #4ea487;
   --sb-size: 10px;
   height: 100vh;
+
 }
 
 body::-webkit-scrollbar {
@@ -61,8 +63,9 @@ body::-webkit-scrollbar-thumb {
 
 @media screen and (min-width: 480px) and (max-width: 779px) {
   .imprint {
-    padding: 56px 30px ;
-  }
+  padding: 56px 30px ;
+}
+  
 }
 
 @media screen and (min-width: 780px) and (max-width: 1280px) {
@@ -75,4 +78,11 @@ body::-webkit-scrollbar-thumb {
   .imprint {
     padding: 56px 90px;
   }
+}
+
+
+@media screen and (max-width: 1000px) {
+  .imprint {
+  min-height: calc(100vh - 237px);
+}
 }
